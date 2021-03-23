@@ -12,7 +12,7 @@ const Landing: React.FC = () => {
     window.onload = () => {
 
         var tl = gsap.timeline();
-        tl  .from(".welcome", {opacity:0})
+        tl.from(".welcome", {opacity:0})
             .fromTo(".welcome", {opacity:0}, {opacity:1 , duration: 2}, "-=1")
             .to(".welcome", {opacity:0 , duration: 1.5});
 
