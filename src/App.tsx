@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './App.css';
-import { gsap } from 'gsap';
 import Landing from './landing';
 
 const App: React.FC = () => {
