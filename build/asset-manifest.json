@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eeb04c28.chunk.css",
+    "main.js": "/static/js/main.cfffb941.chunk.js",
+    "main.js.map": "/static/js/main.cfffb941.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0605945.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
+    "static/js/2.b6a00dd7.chunk.js": "/static/js/2.b6a00dd7.chunk.js",
+    "static/js/2.b6a00dd7.chunk.js.map": "/static/js/2.b6a00dd7.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.eeb04c28.chunk.css.map": "/static/css/main.eeb04c28.chunk.css.map",
+    "static/js/2.b6a00dd7.chunk.js.LICENSE.txt": "/static/js/2.b6a00dd7.chunk.js.LICENSE.txt",
+    "static/media/hustleprime.2799a5a9.gif": "/static/media/hustleprime.2799a5a9.gif",
+    "static/media/hustleprime.29227f50.png": "/static/media/hustleprime.29227f50.png",
+    "static/media/me.515401d9.jpg": "/static/media/me.515401d9.jpg",
+    "static/media/todo.5d23f6e2.png": "/static/media/todo.5d23f6e2.png",
+    "static/media/todolist.f229225a.gif": "/static/media/todolist.f229225a.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0605945.js",
+    "static/js/2.b6a00dd7.chunk.js",
+    "static/css/main.eeb04c28.chunk.css",
+    "static/js/main.cfffb941.chunk.js"
+  ]
+}
