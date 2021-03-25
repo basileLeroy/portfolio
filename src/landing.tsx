@@ -1,11 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import { gsap } from 'gsap';
 import me from './assets/me.jpg';
-import hustleprime from './assets/hustleprime.gif';
-import hustle from './assets/hustleprime.png';
-import todolist from './assets/todolist.gif';
-import todo from './assets/todo.png';
 import './App.css';
+import AboutMe from './about';
+import Projects from './projects';
 
 const Landing: React.FC = () => {
 
@@ -46,10 +45,10 @@ const Landing: React.FC = () => {
                         <hr/>
                         <div className="navLinks">
                             <ul>
-                                <li><a href="">About</a></li>
-                                <li><a href="">My projects</a></li>
-                                <li><a href="">Extra's</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/projects">My projects</Link></li>
+                                <li><Link to="/extras">Extra's</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </div>
                         <div className="social">
@@ -68,42 +67,17 @@ const Landing: React.FC = () => {
                             </a>
                         </div>
                     </div>
+                    
                     <div className="field">
-                        <div className="aboutMe">
-                            <h1>About myself</h1>
-                            <p>
-                                Not too long ago, I had close to no knowledge about programming.
-                                Now, I have learned the ability to create amazing things in multiple languages!
-                                How far I have gotten up until now, I can only descripbe as a mix of
-                                interest, wanting to learn, motivation and dedication. <br/><br/>
-                                <i>Sociable, teamplayer, client-oriented, .. Those are badges I wear with honor.</i>
-                            </p>
-                            <br/>
-                            <hr/>
-                        </div>
-                        <div className="projects">
-                        <h1>My projects</h1>
-                            <p>
-                                
-                            </p>
-                            <br/>
-                            <div className="allProjects">
-                                <div className="project">
-                                    <img src={hustle} alt="" className="static"/>
-                                    <img src={hustleprime} alt="" className="active"/>
-                                    <p>Hustle Prime</p>
-                                </div>
-                                <div className="project">
-                                    <img src={todo} alt="" className="static"/>
-                                    <img src={todolist} alt="" className="active"/>
-                                    <p>Todo-list + calendar</p>
-                                </div>
-                            </div>
-                            
-                            <hr/>
-                        </div>
+                        <Switch>
+                            <Route exact path="/" component={AboutMe} />
+                            <Route exact path="/about" component={AboutMe} />
+                            <Route exact path="/projects" component={Projects} />
+                        </Switch>
+                        
                         <div className="extras"></div>
                     </div>
+                    
                 </div>
             </section>
             
