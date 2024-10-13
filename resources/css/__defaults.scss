@@ -1,3 +1,7 @@
+:root {
+    color-scheme: light dark;
+}
+
 // reset everything
 * {
     margin: 0;
@@ -19,6 +23,9 @@ body {
     min-height: 100vh;
     line-height: 1;
     text-rendering: optimizeSpeed;
+    
+    color: light-dark(#333b3c, #efefec);
+    background-color: light-dark(#efedea, #223a2c);
 }
 
 // all media elements set to block and full width

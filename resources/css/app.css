@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +19,8 @@ body {
   min-height: 100vh;
   line-height: 1;
   text-rendering: optimizeSpeed;
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #223a2c);
 }
 
 img,
@@ -155,33 +161,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-body header {
+
+header, main, footer {
   width: 95%;
   height: 500px;
-  background-color: rgb(8, 14, 24);
-}
-body main {
-  width: 95%;
-  height: 500px;
-  background-color: rgb(8, 14, 24);
-}
-body footer {
-  width: 95%;
   background-color: rgb(8, 14, 24);
 }
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
-  body header {
+  header, main, footer {
     width: 100%;
     max-width: 2000px;
   }
-  body main {
-    width: 100%;
-    max-width: 2000px;
+  header {
+    display: flex;
+    justify-content: space-between;
   }
-  body footer {
-    width: 100%;
-    max-width: 2000px;
+  header #logo img {
+    width: 75px;
+    height: auto;
   }
 }/*# sourceMappingURL=app.css.map */
