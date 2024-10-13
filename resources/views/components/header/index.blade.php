@@ -1,7 +1,7 @@
 <header>
     <a href="/" id="logo">
         <img src="{{ asset('storage/logo.png') }}" alt="">
-        Basile Leroy
+        <span>asile Leroy</span>
     </a>
     <x-nav />
     Header here
