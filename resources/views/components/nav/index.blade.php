@@ -21,7 +21,19 @@
         </div>
     </div>
     <div id="desktop">
-        <h1>Hello world</h1>
+        <nav class="desktop-main-nav">
+            <ul>
+                <li>
+                    <a href="/">About me</a>
+                </li>
+                <li>
+                    <a href="#">Showcase</a>
+                </li>
+                <li>
+                    <a href="#">Contact me</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
 </div>
