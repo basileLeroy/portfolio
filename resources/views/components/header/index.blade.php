@@ -4,5 +4,4 @@
         <span>asile Leroy</span>
     </a>
     <x-nav />
-    Header here
 </header>
