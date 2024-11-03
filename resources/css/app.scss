@@ -296,6 +296,7 @@ header, main, footer {
                             color:white;
                             text-transform:uppercase;
                             transition:0.5s;
+                            
                         }
 
                         a:hover{
@@ -324,6 +325,9 @@ header, main, footer {
                             transition:transform 0.5s;
                             transform-origin:left;
                             transform:scaleX(1);
+                        }
+                        a.active {
+                            border-bottom: 2px solid white;
                         }
                     }
                 }

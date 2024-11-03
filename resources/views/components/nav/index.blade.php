@@ -24,13 +24,22 @@
         <nav class="desktop-main-nav">
             <ul>
                 <li>
-                    <a href="/">About me</a>
+                    <x-nav-link 
+                    :href="route('about')" 
+                    :active="request()->routeIs('about')"
+                    >About me</x-nav-link>
                 </li>
                 <li>
-                    <a href="#">Showcase</a>
+                    <x-nav-link 
+                    :href="route('projects')" 
+                    :active="request()->routeIs('projects')"
+                    >Showcase</x-nav-link>
                 </li>
                 <li>
-                    <a href="#">Contact me</a>
+                    <x-nav-link 
+                    :href="route('contact')" 
+                    :active="request()->routeIs('contact')"
+                    >Contact me</x-nav-link>
                 </li>
             </ul>
         </nav>

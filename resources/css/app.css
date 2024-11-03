@@ -430,6 +430,9 @@ header, main, footer {
     transform-origin: left;
     transform: scaleX(1);
   }
+  header .menu #desktop .desktop-main-nav ul li a.active {
+    border-bottom: 2px solid white;
+  }
   header .menu #mobile {
     display: none;
   }
