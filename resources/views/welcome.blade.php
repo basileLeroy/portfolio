@@ -1,3 +1,1 @@
-<x-guest-layout>
-
-</x-guest-layout>
+{{-- Template blade page --}}
