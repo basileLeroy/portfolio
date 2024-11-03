@@ -150,6 +150,42 @@ textarea {
     scroll-behavior: auto !important;
   }
 }
+/* setting default text styling for mobile and desktop */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: rgb(246, 246, 246);
+}
+
+/* For mobile: */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
 body {
   background-color: rgb(12, 21, 37);
   width: 100%;

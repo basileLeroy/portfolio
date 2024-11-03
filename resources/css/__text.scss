@@ -1,3 +1,57 @@
 $family : sans-serif;
 
 $primary: #2899E5;
+
+$text-default-color : rgb(246, 246, 246);
+$text-primary-color : #2899E5;
+
+$paragraph-mobile-size : 18px;
+$paragraph-desktop-size : 22px;
+
+$h1-mobile-size : 30px;
+$h1-desktop-size : 40px;
+
+$h2-mobile-size : 30px;
+$h2-desktop-size : 40px;
+
+$h3-mobile-size : 30px;
+$h3-desktop-size : 40px;
+
+/* setting default text styling for mobile and desktop */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    color: $text-default-color;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: $paragraph-mobile-size;
+    }
+    h1 {
+        font-size: $h1-mobile-size;
+    }
+    p {
+        font-size: $paragraph-mobile-size;
+    }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: $paragraph-desktop-size;
+    }
+    h1 {
+        font-size: $h1-desktop-size;
+    }
+    p {
+        font-size: $paragraph-desktop-size;
+    }
+}

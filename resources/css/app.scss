@@ -21,10 +21,7 @@ header, main, footer {
     background-color: $background-primary;
 
     box-sizing: border-box;
-
-
 }
-
 /* For mobile phones: */
 @media only screen and (max-width: 767px) {
     header {
@@ -339,6 +336,12 @@ header, main, footer {
 
         .menu #mobile {
             display: none;
+        }
+    }
+
+    main {
+        h1 {
+            
         }
     }
 }
