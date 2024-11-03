@@ -272,6 +272,9 @@ header, main, footer {
     text-decoration: none;
     font-weight: bold;
   }
+  header .menu #mobile .container .main-nav a.active {
+    border-bottom: 2px solid #2899E5;
+  }
   header .menu #mobile .container .open-main-nav {
     position: absolute;
     top: 15px;
