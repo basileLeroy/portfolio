@@ -13,11 +13,11 @@ $paragraph-desktop-size : 22px;
 $h1-mobile-size : 30px;
 $h1-desktop-size : 40px;
 
-$h2-mobile-size : 30px;
+$h2-mobile-size : 24px;
 $h2-desktop-size : 28px;
 
-$h3-mobile-size : 30px;
-$h3-desktop-size : 40px;
+// $h3-mobile-size : 30px;
+// $h3-desktop-size : 40px;
 
 /* setting default text styling for mobile and desktop */
 
@@ -49,8 +49,15 @@ span.focus-normal {
     h1 {
         font-size : $h1-mobile-size;
     }
+
+    h2 {
+        font-size : $h2-mobile-size;
+        margin-bottom : 1rem;
+    }
+
     p {
-        font-size : $paragraph-mobile-size;
+        font-size: $paragraph-mobile-size;
+        margin-bottom: 1rem;
     }
 }
 

@@ -210,7 +210,33 @@ header, main, footer {
     }
 
     main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+        .banner {
+            display: flex;
+            flex-direction: column;
+            
+            .about-me {
+                width: 100%;
+                
+
+                p.name {
+                    color: $secondary;
+                }
+            }
+
+            .my-picture {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    // box-shadow: $background-blue-dark 0px 22px 70px 4px;
+                }
+            }
+        }
     }
 
     footer {
