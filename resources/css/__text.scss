@@ -1,6 +1,8 @@
 $family : sans-serif;
 
 $primary: #2899E5;
+$secondary : #1D71B8;
+
 
 $text-default-color : rgb(246, 246, 246);
 $text-primary-color : #2899E5;
@@ -12,7 +14,7 @@ $h1-mobile-size : 30px;
 $h1-desktop-size : 40px;
 
 $h2-mobile-size : 30px;
-$h2-desktop-size : 40px;
+$h2-desktop-size : 28px;
 
 $h3-mobile-size : 30px;
 $h3-desktop-size : 40px;
@@ -25,33 +27,49 @@ h2,
 h3,
 h4,
 h5,
-h6,
-span {
-    color: $text-default-color;
+h6 {
+    color : $text-default-color;
+}
+
+span.focus-big {
+    font-weight : 700;
+    color : $text-primary-color;
+}
+
+span.focus-normal {
+    font-weight : 500;
+    color : $text-primary-color;
 }
 
 /* For mobile: */
 @media only screen and (max-width: 767px) {
     html {
-        font-size: $paragraph-mobile-size;
+        font-size : $paragraph-mobile-size;
     }
     h1 {
-        font-size: $h1-mobile-size;
+        font-size : $h1-mobile-size;
     }
     p {
-        font-size: $paragraph-mobile-size;
+        font-size : $paragraph-mobile-size;
     }
 }
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
     html {
-        font-size: $paragraph-desktop-size;
+        font-size : $paragraph-desktop-size;
     }
     h1 {
-        font-size: $h1-desktop-size;
+        font-size : $h1-desktop-size;
+        margin-bottom : 2rem;
+    }
+
+    h2 {
+        font-size : $h2-desktop-size;
+        margin-bottom : 0.6rem;
     }
     p {
         font-size: $paragraph-desktop-size;
+        margin-bottom: 0.6rem;
     }
 }
