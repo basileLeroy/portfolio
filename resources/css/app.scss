@@ -30,7 +30,7 @@ header, main, footer {
         align-items: center;
         border-radius: 5px 5px 0 0;
     
-        #logo {
+        #logo.mobile {
             z-index: 50;
             img {
                 width: 60px;
@@ -38,6 +38,10 @@ header, main, footer {
             span {
                 display: none;
             }
+        }
+
+        #logo.desktop {
+            display: none;
         }
 
         .menu #mobile .container {
@@ -209,6 +213,8 @@ header, main, footer {
         }
     }
 
+
+
     main {
         display: flex;
         flex-direction: column;
@@ -257,31 +263,21 @@ header, main, footer {
         display: flex;
         justify-content: space-between;
 
-        #logo {
+        #logo.desktop {
             position: relative;
-            width: 150px;
             height: auto;
             display: inline-block;
             text-decoration: none;
             
             img {
                 display: block;
-                width: 75px;
+                width: 150px;
                 height: auto;
             }
+        }
 
-            span {
-                display: block;
-                position: absolute;
-                bottom: 10px;
-                left: 50px;
-                white-space: nowrap;
-                color: $primary;
-                font-weight: 700;
-                padding: 5px 10px;
-                font-size: 16px;
-            }
-            
+        #logo.mobile {
+            display: none;
         }
 
         .menu {

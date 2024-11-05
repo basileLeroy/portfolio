@@ -207,7 +207,7 @@ span.focus-normal {
   }
 }
 body {
-  background-color: rgb(12, 21, 37);
+  background-color: #0c1525;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -220,7 +220,7 @@ body {
 header, main, footer {
   width: 95%;
   padding: 20px 10px;
-  background-color: rgb(8, 14, 24);
+  background-color: #080e18;
   box-sizing: border-box;
 }
 
@@ -232,13 +232,16 @@ header, main, footer {
     align-items: center;
     border-radius: 5px 5px 0 0;
   }
-  header #logo {
+  header #logo.mobile {
     z-index: 50;
   }
-  header #logo img {
+  header #logo.mobile img {
     width: 60px;
   }
-  header #logo span {
+  header #logo.mobile span {
+    display: none;
+  }
+  header #logo.desktop {
     display: none;
   }
   header .menu #mobile .container {
@@ -252,7 +255,7 @@ header, main, footer {
     left: 0;
     bottom: 0;
     text-align: center;
-    background: rgb(12, 21, 37);
+    background: #0c1525;
     opacity: 0;
     z-index: -1;
     visibility: hidden;
@@ -428,28 +431,19 @@ header, main, footer {
     display: flex;
     justify-content: space-between;
   }
-  header #logo {
+  header #logo.desktop {
     position: relative;
-    width: 150px;
     height: auto;
     display: inline-block;
     text-decoration: none;
   }
-  header #logo img {
+  header #logo.desktop img {
     display: block;
-    width: 75px;
+    width: 150px;
     height: auto;
   }
-  header #logo span {
-    display: block;
-    position: absolute;
-    bottom: 10px;
-    left: 50px;
-    white-space: nowrap;
-    color: #2899E5;
-    font-weight: 700;
-    padding: 5px 10px;
-    font-size: 16px;
+  header #logo.mobile {
+    display: none;
   }
   header .menu {
     display: flex;

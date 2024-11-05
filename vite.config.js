@@ -6,6 +6,7 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/js/app.js',
+                'resources/js/animations/text-animations.js',
             ],
             refresh: true,
         }),
