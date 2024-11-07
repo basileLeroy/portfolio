@@ -194,11 +194,11 @@ span.focus-normal {
     font-size: 22px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 58px;
     margin-bottom: 2rem;
   }
   h2 {
-    font-size: 28px;
+    font-size: 42px;
     margin-bottom: 0.6rem;
   }
   p {
@@ -517,24 +517,40 @@ header, main, footer {
     justify-content: center;
     align-items: center;
   }
+  main section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
   main .banner {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  main .banner .about-me {
-    max-width: 550px;
+  main .banner h1 {
+    text-align: center;
     width: 100%;
   }
-  main .banner .about-me p.name {
+  main .banner div {
+    display: flex;
+  }
+  main .banner div .about-me {
+    max-width: 450px;
+    width: 100%;
+  }
+  main .banner div .about-me p.name {
     color: #1D71B8;
   }
-  main .banner .my-picture {
+  main .banner div .my-picture {
     display: flex;
     justify-content: end;
-    max-width: 450px;
     width: 100%;
     margin-left: 100px;
   }
-  main .banner .my-picture img {
+  main .banner div .my-picture img {
     width: 100%;
+    height: 100%;
+    max-height: 400px; /* Fill the container's height */
+    -o-object-fit: contain;
+       object-fit: contain; /* Maintains aspect ratio, potentially crops */
   }
 }/*# sourceMappingURL=app.css.map */
