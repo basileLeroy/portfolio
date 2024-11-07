@@ -231,6 +231,9 @@ header, main, footer {
     justify-content: space-between;
     align-items: center;
     border-radius: 5px 5px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   header #logo.mobile {
     z-index: 50;
@@ -435,6 +438,9 @@ header, main, footer {
   header {
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: -30px;
+    z-index: 1000;
   }
   header #logo.desktop {
     position: relative;
