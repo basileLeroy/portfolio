@@ -4,7 +4,7 @@ import Splitting from "splitting";
 import { gsap } from "gsap";
 
 window.addEventListener('DOMContentLoaded', () => {
-    const targets = document.querySelectorAll('#quote');
+    const targets = document.querySelectorAll('.quote');
     const allLines = [];
 
     targets.forEach((target) => {
