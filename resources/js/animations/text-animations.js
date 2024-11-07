@@ -40,30 +40,10 @@ const options = {
 const observer = new IntersectionObserver(sectionVisibleCallback, options);
 
 const sections = document.querySelectorAll('section');
-sections.forEach(section => {
-    observer.observe(section); // Start observing each section
-});
 
-
-// window.addEventListener('DOMContentLoaded', () => {
-//     const targets = document.querySelectorAll('.quote');
-//     const allLines = [];
-
-//     targets.forEach((target) => {
-//         if (target) {
-//             const results = Splitting({ target: target, by: 'lines' });
-
-//             results[0].lines.forEach((line) => {
-//                 allLines.push(...line);
-//             });
-//         } else {
-//             console.error("Element with ID 'quote' not found");
-//         }
-//     });
-
-//     allLines.forEach((word, index) => {
-//         if (word instanceof HTMLElement) {
-//             gsap.from(word, { opacity: 0, delay: index / 100, duration: 0.2 });
-//         }
-//     });
-// });
+// give time for logo to load first
+setTimeout(() => {
+    sections.forEach(section => {
+        observer.observe(section); // Start observing each section
+    });
+}, 1000);
