@@ -212,19 +212,24 @@ header, main, footer {
             display: none;
         }
     }
-
-
-
     main {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .banner {
+        section {
             display: flex;
             flex-direction: column;
-            
+
+            opacity: 0;
+            transition: opacity 0.8s;
+        }
+        section.show {
+            opacity: 1;
+        }
+
+        .banner {
             .about-me {
                 width: 100%;
                 
@@ -370,13 +375,19 @@ header, main, footer {
         section {
             margin-top: 50px;
             margin-bottom: 100px;
-        }
 
-        .banner {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
 
+            opacity: 0;
+            transition: opacity 0.8s;
+        }
+        section.show {
+            opacity: 1;
+        }
+
+        .banner {
             h1 {
                 text-align: center;
                 width: 100%;

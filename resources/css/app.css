@@ -400,9 +400,14 @@ header, main, footer {
     justify-content: center;
     align-items: center;
   }
-  main .banner {
+  main section {
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.8s;
+  }
+  main section.show {
+    opacity: 1;
   }
   main .banner .about-me {
     width: 100%;
@@ -520,11 +525,14 @@ header, main, footer {
   main section {
     margin-top: 50px;
     margin-bottom: 100px;
-  }
-  main .banner {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 0;
+    transition: opacity 0.8s;
+  }
+  main section.show {
+    opacity: 1;
   }
   main .banner h1 {
     text-align: center;
