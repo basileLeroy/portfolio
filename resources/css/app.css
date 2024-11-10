@@ -406,6 +406,8 @@ header, main, footer {
   main section {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
     opacity: 0;
     transition: opacity 0.8s;
   }
@@ -417,6 +419,8 @@ header, main, footer {
   }
   main .banner .about-me p.name {
     color: #1D71B8;
+    background-color: white;
+    padding: 10px 20px;
   }
   main .banner .my-picture {
     width: 100%;
@@ -439,7 +443,6 @@ header, main, footer {
     display: flex;
     justify-content: space-between;
     position: sticky;
-    top: -30px;
     z-index: 1000;
   }
   header #logo.desktop {
@@ -553,6 +556,8 @@ header, main, footer {
   }
   main .banner div .about-me p.name {
     color: #1D71B8;
+    background-color: white;
+    padding: 10px 20px;
   }
   main .banner div .my-picture {
     display: flex;
