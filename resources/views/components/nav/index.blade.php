@@ -1,6 +1,6 @@
 <div class="menu">
     <div id="mobile">
-        <div class="container">
+        {{-- <div class="container">
             <button id="burger" class="open-main-nav">
                 <span class="burger"></span>
                 <span class="burger-text">Menu</span>
@@ -27,7 +27,9 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div> --}}
+        <span class="menu-burger"></span>
+        <p class="menu-text">MENU</p>
     </div>
     <div id="desktop">
         <nav class="desktop-main-nav">
