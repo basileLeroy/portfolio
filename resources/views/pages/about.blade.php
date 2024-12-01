@@ -2,6 +2,9 @@
 @vite(['resources/js/animations/text-animations.js'])
 
 <x-guest-layout>
+    <section class="hero">
+        <h1 class="hero"><span id="first-name">BASILE</span><br><span id="last-name">LEROY</span></h1>
+    </section>
     <section class="banner">
         <h1><span class="focus-big">PHP</span>/<span class="focus-big">Web</span>developer</h1>
         <div>
@@ -16,10 +19,10 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2>The technical skills I have to offer</h2>
-        <div class="tech-skills">
-            
-        </div>
+    <section class="tech">
+        <fieldset>
+            <legend><h2>What I have to offer!</h2></legend>
+            <div class="skill-card">silet</div>
+        </fieldset>
     </section>
 </x-guest-layout>

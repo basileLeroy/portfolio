@@ -192,6 +192,22 @@ header, main, footer {
             opacity: 1;
         }
 
+        .hero {
+            max-width: inherit;
+            h1 {
+                font-size: 4rem;
+                
+                #first-name {
+                    font-family: 'londrina-outline';
+                }
+                #last-name {
+                    font-family: 'londrina-solid';
+                    color: $text-primary-color;
+                    margin-left: 4rem;
+                }
+            }
+        }
+
         .banner {
             .about-me {
                 width: 100%;
@@ -340,25 +356,49 @@ header, main, footer {
         justify-content: center;
         align-items: center;
 
-        section {
+        section{
+            width: 100%;
+            max-width: 900px;
+
             margin-top: 50px;
             margin-bottom: 100px;
 
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            align-items: start;
+            justify-content: start;
 
             opacity: 0;
             transition: opacity 0.8s;
+
+            // needed?
+            // &:first-child  {
+            //     justify-content: center;
+            // }
         }
         section.show {
             opacity: 1;
         }
 
+        .hero {
+            max-width: inherit;
+            h1 {
+                font-size: 8rem;
+                
+                #first-name {
+                    font-family: 'londrina-outline';
+                }
+                #last-name {
+                    font-family: 'londrina-solid';
+                    color: $text-primary-color;
+                    margin-left: 4rem;
+                }
+            }
+        }
+
         .banner {
             h1 {
                 text-align: center;
-                width: 100%;
             }
 
             div {
@@ -387,6 +427,19 @@ header, main, footer {
                         max-height: 400px;
                         object-fit: contain;
                     }
+                }
+            }
+        }
+        .tech {
+            fieldset {
+                width: 100%;
+                border: 2px solid $text-primary-color;
+                border-radius: 5px;
+                padding: 10px;
+
+                legend h2 {
+                    padding-left: 5px;
+                    padding-right: 5px;
                 }
             }
         }
