@@ -340,7 +340,7 @@ header, main, footer {
     gap: 50px;
     color: #2899E5;
     z-index: 20;
-    transform: translateX(-75px) translateY(-300px);
+    transform: translateX(-75px) translateY(-450px);
     transition: transform 0.5s ease;
   }
   .menu-display:not(.is-open) header .menu #mobile .menu-display .menu-background ul {
