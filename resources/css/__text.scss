@@ -4,7 +4,7 @@ $primary: #2899E5;
 $secondary : #1D71B8;
 
 
-$text-default-color : rgb(246, 246, 246);
+$text-default-color : rgb(218, 218, 218);
 $text-primary-color : #2899E5;
 
 $paragraph-mobile-size : 18px;
@@ -78,5 +78,6 @@ span.focus-normal {
     p {
         font-size: $paragraph-desktop-size;
         margin-bottom: 0.6rem;
+        line-height: 1.3rem;
     }
 }
