@@ -1,5 +1,5 @@
-let burger = document.getElementById('burger'),
-	nav    = document.querySelector('.mobile-main-nav');
+let burger = document.querySelector('.menu-button'),
+	nav    = document.querySelector('.menu-display');
 
 burger.addEventListener('click', function(e){
 	this.classList.toggle('is-open');

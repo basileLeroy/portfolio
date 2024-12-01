@@ -231,6 +231,9 @@ header, main, footer {
     justify-content: space-between;
     align-items: center;
     border-radius: 5px 5px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   header #logo.mobile {
     z-index: 50;
@@ -239,40 +242,113 @@ header, main, footer {
     width: 60px;
   }
   header #logo.mobile span {
+    z-index: 50;
     display: none;
   }
   header #logo.desktop {
     display: none;
   }
   header .menu {
-    height: inherit;
-    background-color: red;
+    height: 100%;
+    display: flex;
+    flex-direction: center;
   }
   header .menu #mobile {
-    width: inherit;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  header .menu #mobile .menu-button {
     height: inherit;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding-left: 2px;
-    padding-right: 2px;
-  }
-  header .menu #mobile .menu-burger,
-  header .menu #mobile .menu-burger::before,
-  header .menu #mobile .menu-burger::after {
     position: relative;
+    cursor: pointer;
+    z-index: 20;
+  }
+  header .menu #mobile .menu-button .menu-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 30px;
+    height: 20px;
+  }
+  header .menu #mobile .menu-button .menu-burger .line {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 6px;
-    background-color: #616161;
+    height: 4px;
+    background-color: #1D71B8;
+    transition: opacity 1.5s ease, transform 1s ease;
   }
-  header .menu #mobile .menu-burger::before {
-    content: "";
-    top: -8px;
+  header .menu #mobile .menu-button .menu-burger .line:nth-child(even) {
+    padding-left: 2px;
   }
-  header .menu #mobile .menu-burger::after {
-    content: "";
-    top: 8px;
+  header .menu #mobile .menu-button .menu-text {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #1D71B8;
+  }
+  header .menu #mobile .menu-button.is-open .menu-burger .line:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+  header .menu #mobile .menu-button.is-open .menu-burger .line:nth-child(even) {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  header .menu #mobile .menu-button.is-open .menu-burger .line:last-child {
+    transform: translateY(-8px) rotate(135deg);
+  }
+  header .menu #mobile .menu-display {
+    position: fixed;
+    left: -150%;
+    top: 0;
+    width: 100%;
+    padding-right: 1000px;
+    height: 100%;
+    background-color: transparent;
+    transition: left 0.5s ease, background-color 0.5s ease;
+  }
+  header .menu #mobile .menu-display.is-open {
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+  header .menu #mobile .menu-display .menu-background {
+    position: relative;
+    transform-origin: top right;
+    width: 120%;
+    height: 150%;
+    transform: rotate(20deg);
+    background-color: #0c1525;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  .menu-display:not(.is-open) header .menu #mobile .menu-display .menu-background {
+    background-color: transparent;
+    opacity: 0;
+  }
+  header .menu #mobile .menu-display .menu-background ul {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 50px;
+    color: #2899E5;
+    z-index: 20;
+    transform: translateX(-75px) translateY(-300px);
+    transition: transform 0.5s ease;
+  }
+  .menu-display:not(.is-open) header .menu #mobile .menu-display .menu-background ul {
+    transform: translateX(-100%);
+  }
+  header .menu #mobile .menu-display .menu-background ul li {
+    font-size: larger;
+    transform: rotate(-20deg);
   }
   header .menu #desktop {
     display: none;
