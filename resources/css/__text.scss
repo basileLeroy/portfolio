@@ -23,7 +23,7 @@ $text-primary-color : #2899E5;
 $paragraph-mobile-size : 18px;
 $paragraph-desktop-size : 22px;
 
-$h1-mobile-size : 30px;
+$h1-mobile-size : 10vw;
 $h1-desktop-size : 58px;
 
 $h2-mobile-size : 24px;
@@ -55,9 +55,15 @@ span.focus-normal {
 }
 
 /* For mobile: */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     html {
         font-size : $paragraph-mobile-size;
+    }
+
+    body main .hero {
+        h1 {
+            font-size: clamp(2rem, $h1-mobile-size, 8rem);
+        }
     }
     h1 {
         font-size : $h1-mobile-size;
@@ -75,7 +81,7 @@ span.focus-normal {
 }
 
 /* For desktop: */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     html {
         font-size : $paragraph-desktop-size;
     }
