@@ -15,8 +15,10 @@
         <h2>Hey there! <span class="focus-big">I'm ...</span></h2>
         <div class="desktop slider">
             <ul class="slider-menu">
-                <li id="about-button" tabindex="0" aria-label="show article about Basile Leroy" data-topic="about" class="active">Basile Leroy from Belgium</li>
-                <li id="php-button" tabindex="0" aria-label="show article about my web dev skills" data-topic="php">A PHP web developer</li>
+                <li id="about-button" tabindex="0" aria-label="show article about Basile Leroy" data-topic="about"
+                    class="active">Basile Leroy from Belgium</li>
+                <li id="php-button" tabindex="0" aria-label="show article about my web dev skills" data-topic="php">A
+                    PHP web developer</li>
             </ul>
             <div class="slider-content">
                 <article id="about" class="active" aria-labelledby="about-button">
@@ -27,8 +29,9 @@
                 </article>
                 <article id="php" aria-labelledby="php-button">
                     <p>As a web developer, I mainly work with <span class="focus-normal">PHP</span> as a programming
-                        language.</p>
-                    <p>Of course, I am also familiar with other web oriented programming languages.</p>
+                        language and <span class="focus-normal">Laravel</span> as a framework.</p>
+                    <p>Of course, I am also familiar with other web oriented programming languages, and I have to admit
+                        I even enjoy learning new ones if/when the opportunity is given!</p>
                 </article>
             </div>
         </div>
@@ -37,9 +40,9 @@
             <button class="accordion">Basile Leroy from Belgium</button>
             <div class="panel">
                 <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
-                    class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
-                quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
-                interacting with people all over the world.</p>
+                        class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
+                    quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
+                    interacting with people all over the world.</p>
             </div>
 
             <button class="accordion">A PHP web developer</button>

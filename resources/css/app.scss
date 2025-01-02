@@ -499,7 +499,11 @@ footer {
                         width: 100%;
                         margin-top: 0.5rem;
                         margin-bottom: 0.5rem;
+                        background-color: transparent;
+                        padding: 0;
                         cursor: pointer;
+
+                        transition:padding 0.5s ease, background-color 0.5s ease;
 
                         &.active {
                             color: $secondary;
