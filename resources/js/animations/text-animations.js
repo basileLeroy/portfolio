@@ -3,6 +3,25 @@ import "splitting/dist/splitting-cells.css";
 import Splitting from "splitting";
 import { gsap } from "gsap";
 
+const sliderContents = document.querySelectorAll(".slider-content article");
+
+const toggleActive = (list, item) => {
+    list.forEach(element => element.classList.remove("active"));
+
+    item.classList.add("active");
+}
+
+const handleSliderTransition = (topic, list) => {
+    toggleActive(list, topic)
+
+    const content = Array.from(sliderContents).find(element => element.id === topic.dataset.topic);
+
+    if (content) {
+        toggleActive(sliderContents, content);
+    }
+}
+
+
 const sectionVisibleCallback = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -33,17 +52,47 @@ const sectionVisibleCallback = (entries, observer) => {
         }
     })
 }
+
+const sliderVisibleCallback = (entries, observer) => {
+    // const topics = document.querySelectorAll(".slider-menu li")
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const intervalId = setInterval(() => {
+                const listOfTopics = Array.from(entry.target.children)
+                const currentTopicId = listOfTopics.findIndex(topic => 
+                    topic.classList.contains('active')
+                );
+                const nextTopic = listOfTopics[(currentTopicId + 1) % listOfTopics.length]
+
+                handleSliderTransition(nextTopic, listOfTopics)
+            }, 15000);
+
+            entry.target.dataset.intervalId = intervalId;
+        } else {
+            const intervalId = entry.target.dataset.intervalId;
+            if (intervalId) {
+                clearInterval(intervalId);
+                delete entry.target.dataset.intervalId;
+            }
+        }
+        
+    })
+}
+
 const options = {
     threshold: 0.5
 };
 
 const observer = new IntersectionObserver(sectionVisibleCallback, options);
+const sliderObserver = new IntersectionObserver(sliderVisibleCallback, options)
 
 const sections = document.querySelectorAll('section');
+const sliderTopics = document.querySelector('.slider-menu');
 
 // give time for logo to load first
 setTimeout(() => {
     sections.forEach(section => {
         observer.observe(section); // Start observing each section
     });
+    if(sliderTopics) sliderObserver.observe(sliderTopics);
 }, 1000);

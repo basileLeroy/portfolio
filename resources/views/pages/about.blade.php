@@ -1,4 +1,4 @@
-@vite(['resources/js/animations/text-animations.js', 'resources/js/components/accordion.js'])
+@vite(['resources/js/animations/text-animations.js', 'resources/js/components/accordion.js', 'resources/js/components/slider.js'])
 
 <x-guest-layout>
     <section class="hero">
