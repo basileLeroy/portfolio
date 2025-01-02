@@ -177,6 +177,11 @@ footer {
         }
     }
     main {
+        background-image: url("/public/storage/background-waves.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -408,6 +413,11 @@ footer {
     }
 
     main {
+        background-image: url("/public/storage/background-waves.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -506,7 +516,7 @@ footer {
                         transition:padding 0.5s ease, background-color 0.5s ease;
 
                         &.active {
-                            color: $secondary;
+                            color: $text-secondary-color;
                             background-color: rgb(218, 218, 218);
                             padding: 10px 20px;
                         }
@@ -545,6 +555,16 @@ footer {
                     padding-right: 5px;
                 }
             }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        .terms {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
