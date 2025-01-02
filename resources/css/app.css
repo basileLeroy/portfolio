@@ -451,7 +451,8 @@ footer {
   main .info .mobile.accordion-menu .accordion:hover {
     background-color: #ccc;
   }
-  main .info .mobile.accordion-menu .active, main .info .mobile.accordion-menu .accordion:hover {
+  main .info .mobile.accordion-menu .active,
+  main .info .mobile.accordion-menu .accordion:hover {
     background-color: #ccc;
   }
   main .info .mobile.accordion-menu .panel {
@@ -682,15 +683,58 @@ footer {
     opacity: 1;
     visibility: visible;
   }
-  main .tech fieldset {
+  main .skills fieldset {
     width: 100%;
     border: 2px solid #2899E5;
     border-radius: 5px;
     padding: 10px;
   }
-  main .tech fieldset legend h2 {
+  main .skills fieldset legend h2 {
     padding-left: 5px;
     padding-right: 5px;
+  }
+  main .skills fieldset .change-view {
+    width: inherit;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  main .skills fieldset .change-view label {
+    position: relative;
+    width: 90px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #1D71B8;
+    border-radius: 20px;
+  }
+  main .skills fieldset .change-view label .toggle_circle {
+    position: absolute;
+    left: 6px;
+    border: 3px solid #2899E5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: left 0.3s ease;
+  }
+  main .skills fieldset .change-view label img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+  }
+  main .skills fieldset .change-view label img:last-of-type {
+    opacity: 0.3;
+  }
+  main .skills fieldset .change-view input[type=checkbox]:checked + label .toggle_circle {
+    left: 50px;
+  }
+  main .skills fieldset .change-view input[type=checkbox]:checked + label img:first-of-type {
+    opacity: 0.3;
+  }
+  main .skills fieldset .change-view input[type=checkbox]:checked + label img:last-of-type {
+    opacity: 1;
   }
   footer {
     display: flex;

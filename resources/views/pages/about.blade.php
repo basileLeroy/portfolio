@@ -50,9 +50,9 @@
             <button class="accordion">Basile Leroy from Belgium</button>
             <div class="panel">
                 <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
-                    class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
-                quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
-                interacting with people all over the world.</p>
+                        class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
+                    quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
+                    interacting with people all over the world.</p>
             </div>
 
             <button class="accordion">A PHP web developer</button>
@@ -74,12 +74,24 @@
             </div>
         </div>
     </section>
-    <section class="tech">
+    <section class="skills">
         <fieldset>
             <legend>
                 <h2>What I have to offer!</h2>
             </legend>
-            <div class="skill-card">silet</div>
+            <div class="change-view">
+                <input type="checkbox" id="toggle_checkbox">
+                <label for="toggle_checkbox">
+                    <span class="toggle_circle"></span>
+                    <img src={{ asset('storage/list-size.png') }}
+                        alt="display icon for list type output">
+                    <img src={{ asset('storage/pictogram-size.png') }}
+                        alt="display icon for card type output">
+                </label>
+            </div>
+            <div class="skill-card">
+
+            </div>
         </fieldset>
     </section>
 </x-guest-layout>

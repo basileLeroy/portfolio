@@ -139,7 +139,6 @@ footer {
                         background-color: $background-secondary;
                         opacity: 1;
                         transition: opacity 0.5s ease;
-                        
 
                         .menu-display:not(.is-open) & {
                             background-color: transparent;
@@ -267,11 +266,12 @@ footer {
                         border: 2px solid $primary;
                     }
                     &:hover {
-                        background-color: #ccc; 
+                        background-color: #ccc;
                     }
                 }
-                .active, .accordion:hover {
-                    background-color: #ccc; 
+                .active,
+                .accordion:hover {
+                    background-color: #ccc;
                 }
                 .panel {
                     padding: 0 18px;
@@ -493,7 +493,7 @@ footer {
             display: flex;
             flex-direction: column;
 
-            .mobile.accordion-menu  {
+            .mobile.accordion-menu {
                 display: none;
             }
             .desktop.slider {
@@ -513,7 +513,8 @@ footer {
                         padding: 0;
                         cursor: pointer;
 
-                        transition:padding 0.5s ease, background-color 0.5s ease;
+                        transition: padding 0.5s ease,
+                            background-color 0.5s ease;
 
                         &:hover {
                             background-color: transparent;
@@ -529,8 +530,6 @@ footer {
                                 background-color: transparent;
                             }
                         }
-
-
                     }
                 }
 
@@ -538,7 +537,6 @@ footer {
                     width: 55%;
                     position: relative;
                     article {
-                        
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -554,7 +552,7 @@ footer {
                 }
             }
         }
-        .tech {
+        .skills {
             fieldset {
                 width: 100%;
                 border: 2px solid $text-primary-color;
@@ -564,6 +562,61 @@ footer {
                 legend h2 {
                     padding-left: 5px;
                     padding-right: 5px;
+                }
+
+                .change-view{
+                    width: inherit;
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+
+                    label {
+                        position: relative;
+
+                        width: 90px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        border: 2px solid $secondary;
+                        border-radius: 20px;
+
+                        .toggle_circle {
+                            position: absolute;
+                            left: 6px;
+                            border: 3px solid $primary;
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                            transition: left 0.3s ease;
+                        }
+
+                        img {
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                            transition: opacity 0.3s ease;
+
+                            &:last-of-type {
+                                opacity: 0.3;
+                            }
+                        }
+                    }
+
+                    input[type="checkbox"]:checked + label {
+                        .toggle_circle {
+                            left: 50px;
+                        }
+                
+                        img:first-of-type {
+                            opacity: 0.3;
+                        }
+
+                        img:last-of-type {
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }
