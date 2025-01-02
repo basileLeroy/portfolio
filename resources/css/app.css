@@ -322,6 +322,7 @@ footer {
     transform: translateY(-8px) rotate(135deg);
   }
   header .menu #mobile .menu-display {
+    visibility: hidden;
     position: fixed;
     left: -150%;
     top: 0;
@@ -332,6 +333,7 @@ footer {
     transition: left 0.5s ease, background-color 0.5s ease;
   }
   header .menu #mobile .menu-display.is-open {
+    visibility: visible;
     left: 0;
     background-color: rgba(0, 0, 0, 0.95);
   }
