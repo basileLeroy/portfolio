@@ -192,53 +192,11 @@ footer {
             opacity: 1;
         }
 
-        // .hero {
-        // max-width: inherit;
-        // display: flex;
-        // flex-wrap: nowrap;
-        // justify-content: space-around;
-
-        // h1 {
-        //     display: flex;
-        //     max-width: 100px;
-
-        //     #first-name {
-        //         width: 100px;
-        //         font-family: "londrina-outline";
-        //     }
-        //     #last-name {
-        //         font-family: "londrina-solid";
-        //         background: linear-gradient(
-        //             20deg,
-        //             $secondary,
-        //             $text-primary-color
-        //         );
-        //         -webkit-background-clip: text;
-        //         background-clip: text;
-        //         -webkit-text-fill-color: transparent;
-        //         margin-left: 4rem;
-        //     }
-        // }
-
-        // .my-picture {
-        //     margin-left: 100px;
-
-        //     img {
-        //         width: auto;
-        //         height: auto;
-        //         max-width: 100%;
-        //         max-height: 200px;
-        //         object-fit: contain;
-        //     }
-        // }
-        // }
-
         .hero {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: nowrap;
-            // align-items: center;
 
             h1 {
                 display: flex;
@@ -440,7 +398,6 @@ footer {
 
         .hero {
             max-width: inherit;
-            // height: 100%;
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-around;
@@ -456,7 +413,6 @@ footer {
                 }
                 #last-name {
                     font-family: "londrina-solid";
-                    // background: linear-gradient(20deg, $text-default-color, $text-primary-color);
                     background: linear-gradient(
                         20deg,
                         $secondary,
