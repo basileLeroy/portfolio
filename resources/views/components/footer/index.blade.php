@@ -1,3 +1,6 @@
 <footer>
-    Footer here
+    footer
+    <div class="terms">
+        Terms and conditions
+    </div>
 </footer>
