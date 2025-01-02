@@ -64,7 +64,8 @@ const sliderVisibleCallback = (entries, observer) => {
                 );
                 const nextTopic = listOfTopics[(currentTopicId + 1) % listOfTopics.length]
 
-                handleSliderTransition(nextTopic, listOfTopics)
+                if (localStorage.getItem('autoslider') === "true") handleSliderTransition(nextTopic, listOfTopics)
+                
             }, 15000);
 
             entry.target.dataset.intervalId = intervalId;
@@ -73,6 +74,7 @@ const sliderVisibleCallback = (entries, observer) => {
             if (intervalId) {
                 clearInterval(intervalId);
                 delete entry.target.dataset.intervalId;
+                localStorage.setItem('autoslider', true)
             }
         }
         

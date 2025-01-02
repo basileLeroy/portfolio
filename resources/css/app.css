@@ -641,6 +641,7 @@ footer {
     width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
   }
   main .info .desktop.slider .slider-menu li.active {
     color: #1D71B8;

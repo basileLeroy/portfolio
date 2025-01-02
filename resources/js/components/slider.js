@@ -21,7 +21,19 @@ const handleSliderTransition = (topic) => {
 sliderTopics.forEach(topic => {
     topic.addEventListener('click', () => {
         handleSliderTransition(topic)
+        localStorage.setItem('autoslider', false)
+    })
+    topic.addEventListener('keyup', (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            handleSliderTransition(topic)
+            localStorage.setItem('autoslider', false)
+        }
     })
 });
 
-export default handleSliderTransition;
+window.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.getItem('autoslider')) {
+        localStorage.setItem('autoslider', true)
+    }
+    if (localStorage.getItem('autoslider') === "false") localStorage.setItem('autoslider', true)
+})

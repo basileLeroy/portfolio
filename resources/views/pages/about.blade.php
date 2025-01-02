@@ -15,19 +15,20 @@
         <h2>Hey there! <span class="focus-big">I'm ...</span></h2>
         <div class="desktop slider">
             <ul class="slider-menu">
-                <li data-topic="about" class="active">Basile Leroy from Belgium</li>
-                <li data-topic="php">A PHP web developer</li>
+                <li id="about-button" tabindex="0" aria-label="show article about Basile Leroy" data-topic="about" class="active">Basile Leroy from Belgium</li>
+                <li id="php-button" tabindex="0" aria-label="show article about my web dev skills" data-topic="php">A PHP web developer</li>
             </ul>
             <div class="slider-content">
-                <article id="about" class="active">
+                <article id="about" class="active" aria-labelledby="about-button">
                     <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
                             class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
                         quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
                         interacting with people all over the world.</p>
                 </article>
-                <article id="php">
-                    <p>As a web developer, I chose to focus on <span class="focus-normal">PHP</span> as a programming
-                        language. </p>
+                <article id="php" aria-labelledby="php-button">
+                    <p>As a web developer, I mainly work with <span class="focus-normal">PHP</span> as a programming
+                        language.</p>
+                    <p>Of course, I am also familiar with other web oriented programming languages.</p>
                 </article>
             </div>
         </div>
