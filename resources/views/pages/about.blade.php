@@ -1,5 +1,4 @@
-
-@vite(['resources/js/animations/text-animations.js'])
+@vite(['resources/js/animations/text-animations.js', 'resources/js/components/accordion.js'])
 
 <x-guest-layout>
     <section class="hero">
@@ -7,14 +6,49 @@
             <span id="first-name">BASILE</span><span id="last-name">LEROY</span>
         </h1>
         <div class="my-picture">
-            <img src="{{ asset('storage/profile.png') }}" title="Photo of Basile Leroy" alt="A picture of Basile Leroy sitting down with a colorfull background">
+            <img src="{{ asset('storage/profile.png') }}" title="Photo of Basile Leroy"
+                alt="A picture of Basile Leroy sitting down with a colorful background">
+        </div>
+    </section>
+
+    <section class="info">
+        <h2>Hey there! <span class="focus-big">I'm ...</span></h2>
+        <div class="desktop slider">
+            <ul class="slider-menu">
+                <li data-topic="about" class="active">Basile Leroy from Belgium</li>
+                <li data-topic="php">A PHP web developer</li>
+            </ul>
+            <div class="slider-content">
+                <article id="about" class="active">
+                    <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
+                            class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
+                        quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
+                        interacting with people all over the world.</p>
+                </article>
+                <article id="php">
+                    <p>As a web developer, I chose to focus on <span class="focus-normal">PHP</span> as a programming
+                        language. </p>
+                </article>
+            </div>
         </div>
 
+        <div class="mobile accordion-menu">
+            <button class="accordion">Basile Leroy from Belgium</button>
+            <div class="panel">
+                <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
+                    class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
+                quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
+                interacting with people all over the world.</p>
+            </div>
 
-    </section>
-    <section class="banner">
-        <h1><span class="focus-big">PHP</span>/<span class="focus-big">Web</span>developer</h1>
-        <div>
+            <button class="accordion">A PHP web developer</button>
+            <div class="panel">
+                <p>As a web developer, I chose to focus on <span class="focus-normal">PHP</span> as a programming
+                    language. </p>
+            </div>
+        </div>
+
+        {{-- <div>
             <article class="about-me">
                 <h2>Hey there! I am</h2>
                 <p class="name">Basile Leroy from Belgium</p>
@@ -22,11 +56,13 @@
                 <p class="quote">Next, I was able to work on a few projects. But soon, I got invited to be a <span class="focus-normal">coach</span>/<span class="focus-normal">trainer</span> at the same organization where I was trained. Since then, I have been training job seekers in Belgium to find a job as a web developer.</p>
             </article>
 
-        </div>
+        </div> --}}
     </section>
     <section class="tech">
         <fieldset>
-            <legend><h2>What I have to offer!</h2></legend>
+            <legend>
+                <h2>What I have to offer!</h2>
+            </legend>
             <div class="skill-card">silet</div>
         </fieldset>
     </section>

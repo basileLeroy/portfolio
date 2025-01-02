@@ -1,6 +1,6 @@
 import "../css/app.css";
 import './bootstrap';
-import './hamburger-menu';
+import './components/hamburger-menu';
 
 import Alpine from 'alpinejs';
 

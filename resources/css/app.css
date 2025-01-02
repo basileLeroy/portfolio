@@ -423,13 +423,34 @@ footer {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  main .banner .about-me {
-    width: 100%;
+  main .info .desktop.slider {
+    display: none;
   }
-  main .banner .about-me p.name {
-    color: #1D71B8;
+  main .info .mobile.accordion-menu .accordion {
+    background-color: #eee;
+    color: #2899E5;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #0c1525;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+  main .info .mobile.accordion-menu .accordion:focus {
+    border: 2px solid #2899E5;
+  }
+  main .info .mobile.accordion-menu .accordion:hover {
+    background-color: #ccc;
+  }
+  main .info .mobile.accordion-menu .active, main .info .mobile.accordion-menu .accordion:hover {
+    background-color: #ccc;
+  }
+  main .info .mobile.accordion-menu .panel {
+    padding: 0 18px;
+    display: none;
     background-color: white;
-    padding: 10px 20px;
+    overflow: hidden;
   }
   footer {
     border-radius: 0 0 5px 5px;
@@ -586,19 +607,48 @@ footer {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  main .banner h1 {
-    text-align: center;
-  }
-  main .banner div {
+  main .info {
     display: flex;
+    flex-direction: column;
   }
-  main .banner div .about-me {
-    max-width: 450px;
+  main .info .mobile.accordion-menu {
+    display: none;
   }
-  main .banner div .about-me p.name {
+  main .info .desktop.slider {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  main .info .desktop.slider .slider-menu {
+    width: 100%;
+    max-width: 35%;
+  }
+  main .info .desktop.slider .slider-menu li {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  main .info .desktop.slider .slider-menu li.active {
     color: #1D71B8;
     background-color: rgb(218, 218, 218);
     padding: 10px 20px;
+  }
+  main .info .desktop.slider .slider-content {
+    width: 55%;
+    position: relative;
+  }
+  main .info .desktop.slider .slider-content article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  main .info .desktop.slider .slider-content article.active {
+    opacity: 1;
+    visibility: visible;
   }
   main .tech fieldset {
     width: 100%;
