@@ -89,8 +89,26 @@
                         alt="display icon for card type output">
                 </label>
             </div>
-            <div class="skill-card">
-
+            <div class="skill-card character">
+                <p>Enthusiasm</p>
+            </div>
+            <div class="skill-card team">
+                <p>Team lead experience</p>
+            </div>
+            <div class="skill-card character">
+                <p>Reliable</p>
+            </div>
+            <div class="skill-card educational">
+                <p>Continuous Learner</p>
+            </div>
+            <div class="skill-card educational">
+                <p>Coaching/supporting</p>
+            </div>
+            <div class="skill-card team">
+                <p>Communicative & accessible</p>
+            </div>
+            <div class="skill-card character">
+                <p>One more long one here</p>
             </div>
         </fieldset>
     </section>
