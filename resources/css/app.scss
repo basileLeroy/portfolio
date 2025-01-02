@@ -515,11 +515,22 @@ footer {
 
                         transition:padding 0.5s ease, background-color 0.5s ease;
 
+                        &:hover {
+                            background-color: transparent;
+                            padding: 0 20px;
+                        }
+
                         &.active {
                             color: $text-secondary-color;
                             background-color: rgb(218, 218, 218);
                             padding: 10px 20px;
+
+                            &:hover {
+                                background-color: transparent;
+                            }
                         }
+
+
                     }
                 }
 
