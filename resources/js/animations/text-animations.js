@@ -66,7 +66,7 @@ const sliderVisibleCallback = (entries, observer) => {
 
                 if (localStorage.getItem('autoslider') === "true") handleSliderTransition(nextTopic, listOfTopics)
                 
-            }, 15000);
+            }, 7000);
 
             entry.target.dataset.intervalId = intervalId;
         } else {
