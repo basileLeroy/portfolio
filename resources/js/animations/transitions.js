@@ -1,3 +1,21 @@
+/**
+ * Mobile accordion on about me page
+ */
+
+const accordionButtons = document.querySelectorAll("button.accordion");
+
+accordionButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        let content = button.nextElementSibling;
+        content.classList.toggle('show-content')
+    })
+})
+
+/**
+ * Slider effect on about me page
+ */
+
 const sliderTopics = document.querySelectorAll(".slider-menu li");
 const sliderContents = document.querySelectorAll(".slider-content article");
 
