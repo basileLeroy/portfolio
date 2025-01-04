@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   color-scheme: light dark;
 }
@@ -517,7 +518,51 @@ footer {
     color: #2899E5;
   }
   footer {
-    border-radius: 0 0 5px 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    padding-bottom: 50px;
+  }
+  footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 0 15px 0;
+  }
+  footer .social i {
+    font-size: 2rem;
+    color: #15537C;
+    transition: color 0.3s ease;
+  }
+  footer .social i:hover, footer .social i:focus {
+    color: #2899E5;
+  }
+  footer .footer-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .footer-navigation li {
+    margin: 10px 0;
+  }
+  footer .footer-navigation li::after {
+    content: "•";
+    padding: 0 10px 0 10px;
+    color: #1D71B8;
+  }
+  footer .footer-navigation li:last-child::after {
+    content: "";
+  }
+  footer .footer-navigation a {
+    position: relative;
+    text-decoration: none;
+  }
+  footer .footer-navigation a:hover {
+    color: #1D71B8;
+    text-decoration: underline;
   }
 }
 /* For desktop: */
@@ -730,6 +775,9 @@ footer {
     opacity: 1;
     visibility: visible;
   }
+  main .feedbacks {
+    margin-bottom: 0;
+  }
   main .feedbacks fieldset {
     width: 100%;
     border: 2px solid #2899E5;
@@ -838,11 +886,43 @@ footer {
   }
   footer {
     display: flex;
+    width: 100%;
     flex-direction: column;
-  }
-  footer .terms {
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0 0 0;
+  }
+  footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 0 15px 0;
+  }
+  footer .social i {
+    font-size: 2rem;
+    color: #15537C;
+    transition: color 0.3s ease;
+  }
+  footer .social i:hover, footer .social i:focus {
+    color: #2899E5;
+  }
+  footer .footer-navigation {
+    display: flex;
+  }
+  footer .footer-navigation li::after {
+    content: "•";
+    padding: 0 10px 0 10px;
+    color: #1D71B8;
+  }
+  footer .footer-navigation li:last-child::after {
+    content: "";
+  }
+  footer .footer-navigation a {
+    position: relative;
+    text-decoration: none;
+  }
+  footer .footer-navigation a:hover {
+    color: #1D71B8;
+    text-decoration: underline;
   }
 }/*# sourceMappingURL=app.css.map */

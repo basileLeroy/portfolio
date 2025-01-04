@@ -350,7 +350,60 @@ footer {
     }
 
     footer {
-        border-radius: 0 0 5px 5px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 0 0;
+        padding-bottom: 50px;
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0 0 15px 0;
+
+            i {
+                font-size: 2rem;
+                color: $text-secondary-color;
+                transition: color .3s ease;
+
+                &:hover, &:focus {
+                    color: $text-primary-color;
+                }
+            }
+        }
+
+        .footer-navigation {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+
+            li {
+                margin: 10px 0;
+                &::after {
+                    content: "•";
+                    padding: 0 10px 0 10px;
+                    color: $secondary;
+                }
+
+                &:last-child::after {
+                    content: "";
+                }
+            }
+
+            a {
+                position: relative;
+                text-decoration: none;
+
+                &:hover {
+                    color: $secondary;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }
 
@@ -609,6 +662,7 @@ footer {
         }
 
         .feedbacks {
+            margin-bottom: 0;
             fieldset {
                 width: 100%;
                 border: 2px solid $text-primary-color;
@@ -739,11 +793,54 @@ footer {
 
     footer {
         display: flex;
+        width: 100%;
         flex-direction: column;
-        .terms {
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 0 0;
+
+        .social {
             display: flex;
             justify-content: center;
-            align-items: center;
+            gap: 15px;
+            margin: 0 0 15px 0;
+
+            i {
+                font-size: 2rem;
+                color: $text-secondary-color;
+                transition: color .3s ease;
+
+                &:hover, &:focus {
+                    color: $text-primary-color;
+                }
+            }
+        }
+
+        .footer-navigation {
+            display: flex;
+            
+
+            li {
+                &::after {
+                    content: "•";
+                    padding: 0 10px 0 10px;
+                    color: $secondary;
+                }
+
+                &:last-child::after {
+                    content: "";
+                }
+            }
+
+            a {
+                position: relative;
+                text-decoration: none;
+
+                &:hover {
+                    color: $secondary;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
