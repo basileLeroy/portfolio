@@ -292,6 +292,60 @@ footer {
                 }
             }
         }
+
+        .feedbacks {
+            fieldset {
+                width: 100%;
+                border: 2px solid $text-primary-color;
+                box-sizing: border-box;
+                border-radius: 5px;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                legend h2 {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+                .change-view{
+                    display: none;
+                }
+
+                .review {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    border: .5px solid $primary;
+                    border-radius: 5px;
+                    background: $card-background-gradient;
+                    box-shadow: $primary 1px 1px 5px;
+                    padding: 5px 10px;
+                    width: 100%;
+
+                    .top, .message {
+                        margin-top: 10px;
+                        width: 100%;
+                    }
+                    .keyword {
+                        font-weight: 700;
+                    }
+                    .role {
+                        font-size: medium;
+                    }
+
+                    .fa.fa-star {
+                        color: $background-secondary;
+
+                        &.checked {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     footer {
