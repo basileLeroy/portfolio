@@ -1054,6 +1054,9 @@ a:hover {
     background-color: #2899E5;
     margin: 20px auto;
   }
+  main .projects .project {
+    margin: 50px 0;
+  }
   footer {
     display: flex;
     width: 100%;
