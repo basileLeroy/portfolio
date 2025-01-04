@@ -525,6 +525,28 @@ a:hover {
   main .feedbacks fieldset .review .fa.fa-star.checked {
     color: #2899E5;
   }
+  main .terms {
+    margin-bottom: 0;
+  }
+  main .terms article {
+    margin: 75px 0 50px 0;
+  }
+  main .terms article h3 {
+    margin: 50px 0 10px 0;
+    font-weight: 700;
+  }
+  main .terms article h3::before {
+    content: "⦿ ";
+  }
+  main .terms article ul {
+    padding-left: 1rem;
+    margin: 20px 0;
+  }
+  main .terms article ul li {
+    margin: 5px 0;
+    list-style-type: disc;
+    font-weight: normal;
+  }
   footer {
     display: flex;
     width: 100%;
@@ -892,6 +914,25 @@ a:hover {
   }
   main .feedbacks fieldset.grid .review .message {
     display: none;
+  }
+  main .terms article {
+    margin: 75px 0 50px 0;
+  }
+  main .terms article h3 {
+    margin: 50px 0 10px 0;
+    font-weight: 700;
+  }
+  main .terms article h3::before {
+    content: "⦿ ";
+  }
+  main .terms article ul {
+    padding-left: 1rem;
+    margin: 20px 0;
+  }
+  main .terms article ul li {
+    margin: 5px 0;
+    list-style-type: disc;
+    font-weight: normal;
   }
   footer {
     display: flex;
