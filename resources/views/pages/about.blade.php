@@ -1,4 +1,4 @@
-@vite(['resources/js/animations/text-animations.js', 'resources/js/components/accordion.js', 'resources/js/components/slider.js'])
+@vite(['resources/js/animations/text-animations.js', 'resources/js/animations/transitions.js'])
 
 <x-guest-layout>
     <section class="hero">
@@ -74,41 +74,68 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="feedbacks">
         <fieldset>
             <legend>
-                <h2>What I have to offer!</h2>
+                <h2>What others say about me:</h2>
             </legend>
             <div class="change-view">
                 <input type="checkbox" id="toggle_checkbox">
                 <label for="toggle_checkbox">
                     <span class="toggle_circle"></span>
-                    <img src={{ asset('storage/list-size.png') }}
-                        alt="display icon for list type output">
-                    <img src={{ asset('storage/pictogram-size.png') }}
-                        alt="display icon for card type output">
+                    <img src={{ asset('storage/list-size.png') }} alt="display icon for list type output">
+                    <img src={{ asset('storage/pictogram-size.png') }} alt="display icon for card type output">
                 </label>
             </div>
-            <div class="skill-card character">
-                <p>Enthusiasm</p>
+            <div class="review">
+                <div class="top">
+                    <p><span class="keyword">"Reliable"</span> <span class="role manager">~ Former manager</span></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+
+                </div>
+                <div class="message">
+                    <p>"Basile has consistently been a great help to our team. Whenever we needed someone to take the
+                        initiative or help out on a certain task, he would be there to help! I could always count on
+                        him."</p>
+                </div>
             </div>
-            <div class="skill-card team">
-                <p>Team lead experience</p>
+            <div class="review">
+                <div class="top">
+                    <p><span class="keyword">"Respectful"</span> <span class="role manager">~ Former colleague</span></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+
+                </div>
+                <div class="message">
+                    <p>"Basile will always try to keep other in mind. He also respects his environment and colleagues"</p>
+                </div>
             </div>
-            <div class="skill-card character">
-                <p>Reliable</p>
-            </div>
-            <div class="skill-card educational">
-                <p>Continuous Learner</p>
-            </div>
-            <div class="skill-card educational">
-                <p>Coaching/supporting</p>
-            </div>
-            <div class="skill-card team">
-                <p>Communicative & accessible</p>
-            </div>
-            <div class="skill-card character">
-                <p>One more long one here</p>
+            <div class="review">
+                <div class="top">
+                    <p><span class="keyword">"Honest"</span> <span class="role manager">~ Client</span></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+
+                </div>
+                <div class="message">
+                    <p>"During a project, he would always be honest about what he could and couldn't do. He also communicated his updates frequently on his progress on the project."</p>
+                </div>
             </div>
         </fieldset>
     </section>
