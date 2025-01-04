@@ -405,6 +405,8 @@ a {
             a {
                 position: relative;
                 text-decoration: none;
+                color: $text-default-color;
+
 
                 &:hover {
                     color: $secondary;
@@ -843,6 +845,7 @@ a {
             a {
                 position: relative;
                 text-decoration: none;
+                color: $text-default-color;
 
                 &:hover {
                     color: $secondary;
