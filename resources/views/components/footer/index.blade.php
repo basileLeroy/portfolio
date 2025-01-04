@@ -7,7 +7,6 @@
         <li class="link"><a href={{ route("about")}}>Home</a></li>
         <li class="link"><a href={{ route("projects")}}>Showcase</a></li>
         <li class="link"><a href={{ route("contact")}}>Contact me</a></li>
-        <li class="link"><a href="">Terms</a></li>
-        {{-- <li class="link"><a href={{ route("terms")}}>Terms</a></li> --}}
+        <li class="link"><a href={{ route("terms")}}>Terms & Services</a></li>
     </ul>
 </footer>

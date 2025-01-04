@@ -243,6 +243,14 @@ footer {
   box-sizing: border-box;
 }
 
+a {
+  color: #2899E5;
+}
+a:hover {
+  color: #15537C;
+  text-decoration: underline;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 767px) {
   header {

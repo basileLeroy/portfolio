@@ -14,4 +14,8 @@ Route::get('/projects', function () {
     return view('pages.projects');
 })->name("projects");
 
+Route::get('/terms-and-services', function () {
+    return view('pages.terms');
+})->name("terms");
+
 require __DIR__.'/auth.php';
