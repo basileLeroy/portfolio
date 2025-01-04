@@ -1,3 +1,7 @@
+@section("title")
+    Terms & services
+@endsection
+
 <x-guest-layout>
     <section class="show terms">
         <h1>Privacy, terms & services</h1>

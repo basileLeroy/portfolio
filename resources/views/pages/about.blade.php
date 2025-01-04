@@ -1,5 +1,9 @@
 @vite(['resources/js/animations/text-animations.js', 'resources/js/animations/transitions.js'])
 
+@section("title")
+    About me
+@endsection
+
 <x-guest-layout>
     <section class="hero">
         <h1 class="hero">

@@ -1,3 +1,7 @@
+@section("title")
+    Contact me
+@endsection
+
 <x-guest-layout>
     <section class="show contact">
         <form action="">
