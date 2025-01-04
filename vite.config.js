@@ -7,7 +7,7 @@ export default defineConfig({
             input: [
                 'resources/js/app.js',
                 'resources/js/animations/text-animations.js',
-                'resources/js/components/slider.js',
+                'resources/js/animations/transitions.js',
             ],
             refresh: true,
         }),
