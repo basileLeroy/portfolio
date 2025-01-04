@@ -55,3 +55,14 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     if (localStorage.getItem('autoslider') === "false") localStorage.setItem('autoslider', true)
 })
+
+/**
+ * Toggle view mode on reviews in about me page
+ */
+
+const   field = document.querySelector('section.feedbacks fieldset'),
+        toggleButton = document.querySelector('#toggle_checkbox')
+
+toggleButton.addEventListener('change', () => {
+    field.classList.toggle('grid')
+})
