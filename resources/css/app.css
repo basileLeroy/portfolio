@@ -678,6 +678,7 @@ footer {
   main .info {
     display: flex;
     flex-direction: column;
+    margin-bottom: 200px;
   }
   main .info .mobile.accordion-menu {
     display: none;
