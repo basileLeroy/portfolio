@@ -252,8 +252,8 @@ footer {
 
             .mobile.accordion-menu {
                 .accordion {
-                    background-color: #eee;
-                    color: $text-primary-color;
+                    background: $card-background-gradient;
+                    color: $text-default-color;
                     cursor: pointer;
                     padding: 18px;
                     width: 100%;
@@ -552,7 +552,7 @@ footer {
                 }
             }
         }
-        
+
         .feedbacks {
             fieldset {
                 width: 100%;

@@ -435,8 +435,8 @@ footer {
     display: none;
   }
   main .info .mobile.accordion-menu .accordion {
-    background-color: #eee;
-    color: #2899E5;
+    background: linear-gradient(25deg, rgba(93, 93, 212, 0.7176470588), rgba(129, 129, 178, 0.3882352941));
+    color: rgb(218, 218, 218);
     cursor: pointer;
     padding: 18px;
     width: 100%;
