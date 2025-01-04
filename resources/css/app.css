@@ -1044,6 +1044,16 @@ a:hover {
     border-color: #2899E5;
     box-shadow: #1D71B8 1px 2px 5px;
   }
+  main .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  main .projects hr {
+    width: 70%;
+    height: 2px;
+    background-color: #2899E5;
+    margin: 20px auto;
+  }
   footer {
     display: flex;
     width: 100%;

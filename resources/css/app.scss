@@ -971,6 +971,18 @@ a {
                 }
             }
         }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+
+            hr {
+                width: 70%;
+                height: 2px;
+                background-color: $primary;
+                margin: 20px auto;
+            }
+        }
     }
 
     footer {
