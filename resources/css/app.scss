@@ -252,8 +252,9 @@ footer {
 
             .mobile.accordion-menu {
                 .accordion {
-                    background: $card-background-gradient;
-                    color: $text-default-color;
+                    background: $light-background-gradient;
+                    color: $text-secondary-color;
+                    font-weight: 600;
                     cursor: pointer;
                     padding: 18px;
                     width: 100%;
@@ -320,7 +321,7 @@ footer {
                     gap: 20px;
                     border: .5px solid $primary;
                     border-radius: 5px;
-                    background: $card-background-gradient;
+                    background: $dark-background-gradient;
                     box-shadow: $primary 1px 1px 5px;
                     padding: 5px 10px;
                     width: 100%;
@@ -567,8 +568,7 @@ footer {
                         padding: 0;
                         cursor: pointer;
 
-                        transition: padding 0.5s ease,
-                            background-color 0.5s ease;
+                        transition: padding 0.5s ease, background-color 0.5s ease;
 
                         &:hover {
                             background-color: transparent;
@@ -577,7 +577,7 @@ footer {
 
                         &.active {
                             color: $text-secondary-color;
-                            background-color: rgb(218, 218, 218);
+                            background: $light-background-gradient;
                             padding: 10px 20px;
 
                             &:hover {
@@ -685,7 +685,7 @@ footer {
                     gap: 20px;
                     border: .5px solid $primary;
                     border-radius: 5px;
-                    background: $card-background-gradient;
+                    background: $dark-background-gradient;
                     box-shadow: $primary 1px 1px 5px;
                     padding: 5px 10px;
                     width: 100%;

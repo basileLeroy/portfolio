@@ -435,8 +435,9 @@ footer {
     display: none;
   }
   main .info .mobile.accordion-menu .accordion {
-    background: linear-gradient(25deg, rgba(93, 93, 212, 0.7176470588), rgba(129, 129, 178, 0.3882352941));
-    color: rgb(218, 218, 218);
+    background: linear-gradient(25deg, rgb(218, 218, 218), #9bc9e9);
+    color: #15537C;
+    font-weight: 600;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -706,7 +707,7 @@ footer {
   }
   main .info .desktop.slider .slider-menu li.active {
     color: #15537C;
-    background-color: rgb(218, 218, 218);
+    background: linear-gradient(25deg, rgb(218, 218, 218), #9bc9e9);
     padding: 10px 20px;
   }
   main .info .desktop.slider .slider-menu li.active:hover {
