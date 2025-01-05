@@ -29,8 +29,8 @@
             <div class="slider-content">
                 <article id="about" class="active" aria-labelledby="about-button">
                     <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
-                            class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
-                        quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
+                            class="focus-normal">Dutch</span> and <span class="focus-normal">French</span> and
+                        I became fluent in <span class="focus-normal">English</span> by
                         interacting with people all over the world.</p>
                 </article>
                 <article id="php" aria-labelledby="php-button">
@@ -54,9 +54,9 @@
             <button class="accordion">Basile Leroy from Belgium</button>
             <div class="panel">
                 <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
-                        class="focus-normal">dutch</span> and <span class="focus-normal">french</span> at home but
-                    quickly became fluent in <span class="focus-normal">english</span> too by traveling around and
-                    interacting with people all over the world.</p>
+                    class="focus-normal">Dutch</span> and <span class="focus-normal">French</span> and
+                I became fluent in <span class="focus-normal">English</span> by
+                interacting with people all over the world.</p>
             </div>
 
             <button class="accordion">A PHP web developer</button>
