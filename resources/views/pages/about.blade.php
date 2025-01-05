@@ -111,6 +111,23 @@
             </div>
             <div class="review">
                 <div class="top">
+                    <p><span class="keyword">"Conscientious"</span> <span class="role manager">~ Former colleague</span></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+
+                </div>
+                <div class="message">
+                    <p>You entrust Basile with a task and he always provides valuable work.
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="top">
                     <p><span class="keyword">"Respectful"</span> <span class="role manager">~ Former colleague</span></p>
                     <div class="stars">
                         <span class="fa fa-star checked"></span>

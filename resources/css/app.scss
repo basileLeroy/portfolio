@@ -770,6 +770,9 @@ a {
                 gap: 15px;
                 transition: all .5s ease;
 
+                max-height: 550px;
+                overflow-y: scroll;
+
                 legend h2 {
                     padding-left: 5px;
                     padding-right: 5px;
