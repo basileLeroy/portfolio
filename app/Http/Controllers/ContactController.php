@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Closure;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use App\Mail\ConfirmContactMail;
+use App\Mail\NotifyNewContactMail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
@@ -13,7 +16,6 @@ class ContactController extends Controller
 {
     public function index (Request $request) 
     {
-        
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email',
@@ -34,15 +36,26 @@ class ContactController extends Controller
             ]
         ]);
 
+        $now = Carbon::now();
+        $timestamp = $now->format('M jS, Y');
+
         if ($request->bottingtrap !== null) {
-            dd('a bot filled it in');
+            return redirect()->back()->with(['bot-alert' =>'Your request has been denied!']);
         }
 
-        Mail::raw('This is a test email', function ($message) {
-            $message->to('basileleroy.pro@gmail.com')
-                    ->subject('Test Email from Laravel');
-        });
-        dd($request);
+        Mail::to(['basileleroy.pro@gmail.com', 'basile2105@gmail.com'])->send(new NotifyNewContactMail([
+            "name" => $request->name,
+            "message" => $request->message,
+            "timestamp" => $timestamp
+        ]));
+
+        Mail::to($request->email)->send(new ConfirmContactMail([
+            "name" => $request->name,
+            "message" => $request->message,
+            "timestamp" => $timestamp
+        ]));
+
+        return redirect()->back();
 
     }
 }
