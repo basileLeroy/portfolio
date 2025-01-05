@@ -605,6 +605,77 @@ a:hover {
     border-color: #2899E5;
     box-shadow: #1D71B8 1px 2px 5px;
   }
+  main .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  main .projects hr {
+    width: 70%;
+    height: 2px;
+    background-color: #2899E5;
+    margin: 20px auto;
+  }
+  main .projects .project {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main .projects .project p, main .projects .project ul {
+    font-size: medium;
+  }
+  main .projects .project h2 {
+    order: -1;
+    width: 100%;
+    margin: 20px 0 50px 0;
+  }
+  main .projects .project h3 {
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+  main .projects .project .details {
+    box-sizing: border-box;
+    order: 1;
+    margin: 20px 0 50px 0;
+  }
+  main .projects .project .details .features {
+    padding-left: 1rem;
+  }
+  main .projects .project .details .features li {
+    margin: 5px 0;
+    list-style-type: square;
+    font-weight: normal;
+  }
+  main .projects .project .details .tech {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .projects .project .details .tech li {
+    border: 4px solid #1D71B8;
+    margin: 3px 5px;
+    padding: 2px 4px;
+    border-radius: 5px;
+  }
+  main .projects .project .visuals {
+    order: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  main .projects .project .visuals a {
+    width: 40%;
+  }
+  main .projects .project .visuals img {
+    width: 100%;
+    height: auto;
+  }
+  main .projects .project .visuals img:hover {
+    border: 3px solid #2899E5;
+  }
   footer {
     display: flex;
     width: 100%;
