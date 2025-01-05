@@ -15,8 +15,13 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+        {{-- API's --}}
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
         <!-- Scripts -->
         @vite(['resources/js/app.js'])
+        
     </head>
     <body>
         <x-header />
@@ -26,5 +31,7 @@
         </main>
 
         <x-footer />
+
+        @stack('scripts')
     </body>
 </html>

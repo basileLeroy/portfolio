@@ -567,6 +567,9 @@ a:hover {
     justify-self: center;
     margin: 10px 0;
   }
+  main .contact form #bottingtrap {
+    display: none;
+  }
   main .contact form label {
     display: flex;
     flex-direction: column;
@@ -1010,6 +1013,9 @@ a:hover {
   main .contact form h1 {
     justify-self: center;
     margin: 10px 0;
+  }
+  main .contact form #bottingtrap {
+    display: none;
   }
   main .contact form label {
     display: flex;

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -9,6 +10,7 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name("contact");
+Route::post('/contact', [ContactController::class, 'index'])->middleware('throttle:5,1')->name('sendMessage');
 
 Route::get('/projects', function () {
     return view('pages.projects');
