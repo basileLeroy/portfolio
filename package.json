@@ -17,6 +17,8 @@
     },
     "dependencies": {
         "gsap": "^3.12.5",
+        "jquery": "^3.7.1",
+        "photoswipe": "^5.4.4",
         "splitting": "^1.1.0"
     }
 }

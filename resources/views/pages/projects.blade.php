@@ -1,4 +1,6 @@
-@section("title")
+@vite(['resources/js/lightbox/init.js'])
+
+@section('title')
     Projects
 @endsection
 
@@ -6,20 +8,20 @@
     <section class="show projects">
         <h1>My projects</h1>
         <p>Here are some projects that I worked on.
-        <hr>
+            <hr>
         <article class="project">
             <h2>Custom CMS dashboard</h2>
             <div class="details">
                 <p>Transforming a static website to a dynamic one, including a CMS-like dashboard for the client.
                 </p>
-                <p>Features include:</p>
-                <ul>
+                <h3>Features include:</h3>
+                <ul class="features">
                     <li>Option to update texts in 3 languages (NL, FR, EN)</li>
                     <li>Custom forms to add new articles and projects</li>
                     <li>Drag&drop to change order of articles or projects</li>
                     <li>Options to update specific image galleries</li>
                 </ul>
-                <p>Stack</p>
+                <h3>Stack</h3>
                 <ul class="tech">
                     <li>PHP - Laravel</li>
                     <li>MySQL</li>
@@ -27,7 +29,35 @@
                     <li>Flowbite CSS</li>
                 </ul>
             </div>
-            <div class="visuals"></div>
+            <div class="visuals pswp-gallery" id="my-gallery">
+                <a href={{ asset('storage/projects/custom-cms/drag-and-drop.gif') }} 
+                    data-pswp-width="994" 
+                    data-pswp-height="585" 
+                    target="_blank">
+                    <img src={{ asset('storage/projects/custom-cms/drag-and-drop.jpg') }} alt="Thumbnail 1">
+                </a>
+                <a href={{ asset('storage/projects/custom-cms/admin-view.jpg') }} 
+                    data-pswp-width="1000" 
+                    data-pswp-height="500" 
+                    target="_blank">
+                    <img src={{ asset('storage/projects/custom-cms/admin-view.jpg') }} alt="Thumbnail 2">
+                </a>
+                <a href={{ asset('storage/projects/custom-cms/language-specific-text-editors.gif') }}
+                    data-pswp-width="994" 
+                    data-pswp-height="585"
+                    target="_blank">
+                    <img src={{ asset('storage/projects/custom-cms/language-specific-text-editors.jpg') }}
+                        alt="Thumbnail 3">
+                </a>
+                </a>
+                <a href={{ asset('storage/projects/custom-cms/remove-and-update-galleries.gif') }}
+                    data-pswp-width="994" 
+                    data-pswp-height="585"
+                    target="_blank">
+                    <img src={{ asset('storage/projects/custom-cms/remove-and-update-galleries.jpg') }}
+                        alt="Thumbnail 3">
+                </a>
+            </div>
         </article>
     </section>
 </x-guest-layout>
