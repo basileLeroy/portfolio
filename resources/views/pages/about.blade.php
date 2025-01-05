@@ -78,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="feedbacks">
+    {{-- <section class="feedbacks">
         <fieldset>
             <legend>
                 <h2>What others say about me:</h2>
@@ -159,5 +159,5 @@
                 </div>
             </div>
         </fieldset>
-    </section>
+    </section> --}}
 </x-guest-layout>
