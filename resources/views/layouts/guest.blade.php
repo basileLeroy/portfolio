@@ -14,7 +14,7 @@
         <meta property="og:title" content="{{ config('app.name', 'Basile Leroy') }} - @yield('title', '')">
         <meta property="og:description" content="@yield('description')">
         <meta property="og:image" content={{ asset("storage/meta-og.jpg") }}>
-        <meta property="og:url" content="basileleroy.com">
+        <meta property="og:url" content="https://basileleroy.com">
         <meta property="og:type" content="website">
 
         {{-- Meta Cards - Twitter --}}
