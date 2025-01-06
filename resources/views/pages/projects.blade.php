@@ -3,6 +3,9 @@
 @section('title')
     Projects
 @endsection
+@section("description")
+    Look at some of the projects Basile Leroy has worked on.
+@endsection
 
 <x-guest-layout>
     <section class="show projects">

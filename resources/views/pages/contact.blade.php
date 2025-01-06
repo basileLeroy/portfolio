@@ -1,6 +1,9 @@
 @section('title')
     Contact me
 @endsection
+@section("description")
+    Contact Basile Leroy on this page.
+@endsection
 
 <x-guest-layout>
     <section class="show contact">

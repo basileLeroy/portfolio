@@ -3,6 +3,9 @@
 @section("title")
     About me
 @endsection
+@section("description")
+    The landing page or "about me" page. It tells you more about who Basile Leroy is as a person and developer.
+@endsection
 
 <x-guest-layout>
     <section class="hero">
