@@ -1,8 +1,8 @@
 @section("title")
-    Terms & services
+Terms & services
 @endsection
 @section("description")
-    Read the terms and services for Basile Leroy's website. It contains an overview on which data is used on the platform and to what end.
+Read the terms and services for Basile Leroy's website. It contains an overview on which data is used on the platform and to what end.
 @endsection
 
 <x-guest-layout>

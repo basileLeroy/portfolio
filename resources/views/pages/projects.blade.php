@@ -1,10 +1,10 @@
 @vite(['resources/js/lightbox/init.js'])
 
 @section('title')
-    Projects
+Projects
 @endsection
 @section("description")
-    Look at some of the projects Basile Leroy has worked on.
+Look at some of the projects Basile Leroy has worked on.
 @endsection
 
 <x-guest-layout>
