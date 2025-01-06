@@ -13,15 +13,15 @@
         {{-- Meta Cards - OpenGraph --}}
         <meta property="og:title" content="{{ config('app.name', 'Basile Leroy') }} - @yield('title', '')">
         <meta property="og:description" content="@yield('description')">
-        <meta property="og:image" content={{ asset("storage/meta-pic.jpg") }}>
+        <meta property="og:image" content={{ asset("storage/meta-og.jpg") }}>
         <meta property="og:url" content="basileleroy.com">
         <meta property="og:type" content="website">
 
         {{-- Meta Cards - Twitter --}}
-        <meta name="twitter:card" content={{ asset("storage/meta-pic.jpg") }}>
+        <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="{{ config('app.name', 'Basile Leroy') }} - @yield('title', '')">
         <meta name="twitter:description" content="@yield('description')">
-        <meta name="twitter:image" content={{ asset("storage/meta-pic.jpg") }}>
+        <meta name="twitter:image" content={{ asset("storage/meta-twitter.jpg") }}>
 
         {{-- Favicon & Page Title --}}
         <link rel="icon" href={{ asset("storage/logo.ico") }} type="image/x-icon">
