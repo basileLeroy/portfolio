@@ -45,6 +45,7 @@ class ContactController extends Controller
 
         Mail::to(['basileleroy.pro@gmail.com', 'basile2105@gmail.com'])->send(new NotifyNewContactMail([
             "name" => $request->name,
+            "email" => $request->email,
             "message" => $request->message,
             "timestamp" => $timestamp
         ]));

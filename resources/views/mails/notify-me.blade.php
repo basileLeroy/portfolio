@@ -21,6 +21,7 @@
             <td style="background-color: #0c1525; border-radius: 10px; padding: 30px; color: #1D71B8; text-align: center;">
                 <h1 style="color: #1D71B8; margin-bottom: 20px;">New contact message!</h1>
                 <p style="color: #dadae0; line-height: 1.5;">From: {{ $data["name"] }}</p>
+                <p style="color: #dadae0; line-height: 1.5;">{{ $data["email"] }}</p>
                 <div style="border: 2px solid #1D71B8; padding: 20px; margin: 30px 0; text-align: left; color: #dadae0;">
                     <h2 style="color: #1D71B8; margin-bottom: 10px;">On [{{ $data["timestamp"] }}], you received:</h2>
                     <p style="line-height: 1.5;">{{ $data["message"] }}</p>
