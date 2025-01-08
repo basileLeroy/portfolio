@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Template</title>
+    <title>Message Received!</title>
 </head>
 
 <body style="background-color: #080e18; margin: 0; padding: 20px; font-family: Arial, sans-serif; color: #1D71B8;">
@@ -36,10 +36,10 @@
             <td style="text-align: center; padding: 20px;">
                 <div style="margin-bottom: 15px;">
                     <a href="https://www.linkedin.com/in/basile-leroy/" style="text-decoration: none;">
-                        <img src={{ asset('storage/LinkedIn.png') }} style="height: 46px; width:auto " alt="LinkedIn">
+                        <img src={{ asset('storage/LinkedIn.png') }} style="height: 40px; width:auto " alt="LinkedIn">
                     </a>
                     <a href="https://github.com/basileLeroy" style="text-decoration: none;">
-                        <img src={{ asset('storage/GitHub.png') }} style="height: 46px; width:auto " alt="GitHub">
+                        <img src={{ asset('storage/GitHub.png') }} style="height: 40px; width:auto " alt="GitHub">
                     </a>
                 </div>
                 <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
