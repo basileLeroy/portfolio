@@ -31,7 +31,7 @@ The landing page or about-me page. It tells you more about who Basile Leroy is a
             </ul>
             <div class="slider-content">
                 <article id="about" class="active" aria-labelledby="about-button">
-                    <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
+                    <p>Born and raised in <span class="focus-normal">Gent</span>. I was brought up in both <span
                             class="focus-normal">Dutch</span> and <span class="focus-normal">French</span> and
                         I became fluent in <span class="focus-normal">English</span> by
                         interacting with people all over the world.</p>
@@ -56,7 +56,7 @@ The landing page or about-me page. It tells you more about who Basile Leroy is a
         <div class="mobile accordion-menu">
             <button class="accordion">Basile Leroy from Belgium</button>
             <div class="panel">
-                <p>Born and raised in <span class="focus-normal">Belgium</span>. I was brought up in both <span
+                <p>Born and raised in <span class="focus-normal">Gent</span>. I was brought up in both <span
                     class="focus-normal">Dutch</span> and <span class="focus-normal">French</span> and
                 I became fluent in <span class="focus-normal">English</span> by
                 interacting with people all over the world.</p>
