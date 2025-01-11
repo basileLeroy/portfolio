@@ -39,22 +39,28 @@ const handleSliderTransition = (topic) => {
 sliderTopics.forEach(topic => {
     topic.addEventListener('click', () => {
         handleSliderTransition(topic)
-        localStorage.setItem('autoslider', false)
+        localStorage.setItem('about.autoslider', false)
     })
     topic.addEventListener('keyup', (event) => {
         if (event.key === "Enter" || event.key === " ") {
             handleSliderTransition(topic)
-            localStorage.setItem('autoslider', false)
+            localStorage.setItem('about.autoslider', false)
         }
     })
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-    if (!localStorage.getItem('autoslider')) {
-        localStorage.setItem('autoslider', true)
+    if (!localStorage.getItem('about.autoslider')) {
+        localStorage.setItem('about.autoslider', true)
     }
-    if (localStorage.getItem('autoslider') === "false") localStorage.setItem('autoslider', true)
+    if (localStorage.getItem('about.autoslider') === "false") localStorage.setItem('about.autoslider', true)
 })
+
+/**
+ * Slider for review carousel in about me page
+ */
+
+
 
 /**
  * Toggle view mode on reviews in about me page
