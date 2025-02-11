@@ -10,7 +10,7 @@ Look at some of the projects Basile Leroy has worked on.
 <x-guest-layout>
     <section class="show projects">
         <h1>My projects</h1>
-        <p>Here are some projects that I worked on.
+        <p>Here are some projects I worked on.
             <hr>
         <article class="project">
             <h2>Custom CMS dashboard</h2>
@@ -67,13 +67,13 @@ Look at some of the projects Basile Leroy has worked on.
         <article class="project">
             <h2>Game Guide platform for game community</h2>
             <div class="details">
-                <p>One of the first websites (static) I made: an information/guide platform made for a game community about a certain game.</p>
-                <p>The website is not live anymore, but I took some screen captures from a local version.</p>   
+                <p>One of the first websites (static) I made: an information/guide platform created for a game community.</p>
+                <p>The website is no longer active, so I took some screen captures from a local version.</p>   
                 <h3>Features include:</h3>
                 <ul class="features">
-                    <li>A complex bracket calculator helping players to know what combinations of levels they need</li>
+                    <li>A complex bracket calculator for optimal level combinations</li>
                     <li>Gear suggestions based on type</li>
-                    <li>Documentation displayed in a fun/readable way</li>
+                    <li>Documentation displayed in a fun/readable format</li>
                 </ul>
                 <h3>Stack</h3>
                 <ul class="tech">
