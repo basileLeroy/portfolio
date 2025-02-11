@@ -35,17 +35,19 @@
                             class="focus-normal">Dutch</span> and <span class="focus-normal">French</span> and
                         I became fluent in <span class="focus-normal">English</span> by
                         interacting with people all over the world.</p>
+                    <p>Nature, friends, family and black coffee (no sugar) are what define me and I'll accept a
+                        ping-pong challenge.</p>
                 </article>
                 <article id="php" aria-labelledby="php-button">
                     <p>As a web developer, I mainly work with <span class="focus-normal">PHP</span> as a programming
                         language and <span class="focus-normal">Laravel</span> as a framework.</p>
-                    <p>Of course, I am also familiar with other web oriented programming languages, and I have to admit
-                        I even enjoy learning new ones if/when the opportunity is given!</p>
+                    <p>I am also familiar with other web oriented programming languages, and I enjoy learning new ones
+                        when I get the chance!</p>
                 </article>
                 <article id="career" aria-labelledby="career-button">
-                    <p>My career started as a self-taught developer but I ended up joining a training program to
+                    <p>My career started as a self-taught developer and I joined a training program to
                         increase my skills and knowledge.</p>
-                    <p>Next, I was able to work on a few projects. But soon, I got invited to be a <span
+                    <p>Next, I worked on a number of projects and soon, I got invited to be a <span
                             class="focus-normal">coach</span>/<span class="focus-normal">trainer</span> at the same
                         organization where I was trained. Since then, I have been training job seekers in Belgium to
                         find a job as a web developer.</p>
@@ -60,21 +62,23 @@
                         class="focus-normal">Dutch</span> and <span class="focus-normal">French</span> and
                     I became fluent in <span class="focus-normal">English</span> by
                     interacting with people all over the world.</p>
+                <p>Nature, friends, family and black coffee (no sugar) are what define me and I'll accept a
+                    ping-pong challenge.</p>
             </div>
 
             <button class="accordion">A PHP web developer</button>
             <div class="panel">
                 <p>As a web developer, I mainly work with <span class="focus-normal">PHP</span> as a programming
                     language and <span class="focus-normal">Laravel</span> as a framework.</p>
-                <p>Of course, I am also familiar with other web oriented programming languages, and I have to admit
-                    I even enjoy learning new ones if/when the opportunity is given!</p>
+                <p>I am also familiar with other web oriented programming languages, and I enjoy learning new ones when
+                    I get the chance!</p>
             </div>
 
             <button class="accordion">My career as a developer</button>
             <div class="panel">
-                <p>My career started as a self-taught developer but I ended up joining a training program to
+                <p>My career started as a self-taught developer and I joined a training program to
                     increase my skills and knowledge.</p>
-                <p>Next, I was able to work on a few projects. But soon, I got invited to be a <span
+                <p>Next, I worked on a number of projects and soon, I got invited to be a <span
                         class="focus-normal">coach</span>/<span class="focus-normal">trainer</span> at the same
                     organization where I was trained. Since then, I have been training job seekers in Belgium to
                     find a job as a web developer.</p>
