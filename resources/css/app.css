@@ -1261,7 +1261,10 @@ a:hover {
     padding: 2px 4px;
     border-radius: 5px;
   }
-  main .projects .project .visuals {
+  main .projects .project .gallery {
+    width: 50%;
+  }
+  main .projects .project .gallery .visuals {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1269,14 +1272,14 @@ a:hover {
     flex-wrap: wrap;
     gap: 10px;
   }
-  main .projects .project .visuals a {
+  main .projects .project .gallery .visuals a {
     width: 40%;
   }
-  main .projects .project .visuals img {
+  main .projects .project .gallery .visuals img {
     width: 100%;
     height: auto;
   }
-  main .projects .project .visuals img:hover {
+  main .projects .project .gallery .visuals img:hover {
     border: 3px solid #2899E5;
   }
   footer {
