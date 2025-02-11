@@ -47,7 +47,7 @@
                 <article id="career" aria-labelledby="career-button">
                     <p>My career started as a self-taught developer and I joined a training program to
                         increase my skills and knowledge.</p>
-                    <p>Next, I worked on a number of projects and soon, I got invited to be a <span
+                    <p>Next, I worked on a number of projects and I got invited to be a <span
                             class="focus-normal">coach</span>/<span class="focus-normal">trainer</span> at the same
                         organization where I was trained. Since then, I have been training job seekers in Belgium to
                         find a job as a web developer.</p>
@@ -78,7 +78,7 @@
             <div class="panel">
                 <p>My career started as a self-taught developer and I joined a training program to
                     increase my skills and knowledge.</p>
-                <p>Next, I worked on a number of projects and soon, I got invited to be a <span
+                <p>Next, I worked on a number of projects and I got invited to be a <span
                         class="focus-normal">coach</span>/<span class="focus-normal">trainer</span> at the same
                     organization where I was trained. Since then, I have been training job seekers in Belgium to
                     find a job as a web developer.</p>
