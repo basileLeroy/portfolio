@@ -1,10 +1,10 @@
 const allReviews = [
     {
-        id: 1, // fake review
-        keyword: "Reliable",
+        id: 1,
+        keyword: "Dedicated",
         role: "Former Manager",
-        score: 4,
-        message: "Basile has consistently been a great help to our team. Whenever we needed someone to take the initiative or help out on a certain task, he would be there to help! I could always count on him."
+        score: 5,
+        message: "You are professional and 100% dedicated to your (social) mission."
     },
     {
         id: 2,
