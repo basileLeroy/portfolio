@@ -1,6 +1,6 @@
 const allReviews = [
     {
-        id: 1,
+        id: 1, // fake review
         keyword: "Reliable",
         role: "Former Manager",
         score: 4,
@@ -15,17 +15,17 @@ const allReviews = [
     },
     {
         id: 3,
-        keyword: "Respectful",
+        keyword: "Involved",
         role: "Former colleague",
         score: 5,
-        message: "Basile will always try to keep other in mind. He also respects his environment and colleagues"
+        message: "Basile is invested in his clients, carefully identifying their needs, and taking the time to listen to their concerns. This results in qualitative work with a strong personal touch."
     },
     {
         id: 4,
-        keyword: "Honest",
-        role: "Client",
-        score: 4,
-        message: "During a project, he would always be honest about what he could and couldn't do. He also communicated his updates frequently on his progress on the project."
+        keyword: "inspiring",
+        role: "Former student",
+        score: 5,
+        message: "During the time I got to be a student in Basile's class, he kept the perfect balance of being a great teacher and a helpful friend who you could always count on. He was very punctual, motivating, passionate and knowledgeable."
     },
 ];
 
