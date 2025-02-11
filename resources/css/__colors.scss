@@ -10,5 +10,7 @@ $background-blue-neutral : #1D71B8;
 $background-blue-dark : #15537C;
 
 $dark-background-gradient : linear-gradient(25deg, #5d5dd4b7, #8181b263);
+$dark-background-gradient-reverse : linear-gradient(-25deg, #5d5dd4b7, #8181b263);
 $light-background-gradient : linear-gradient(25deg, $default-white, #9bc9e9);
+$light-background-gradient-reverse : linear-gradient(-25deg, $default-white, #9bc9e9);
 

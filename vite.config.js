@@ -11,6 +11,7 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/js/app.js',
+                'resources/js/components/reviews.js',
                 'resources/js/animations/text-animations.js',
                 'resources/js/animations/transitions.js',
                 'resources/js/lightbox/init.js',

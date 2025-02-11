@@ -1,10 +1,10 @@
-@vite(['resources/js/animations/text-animations.js', 'resources/js/animations/transitions.js'])
+@vite(['resources/js/animations/text-animations.js', 'resources/js/animations/transitions.js', 'resources/js/components/reviews.js'])
 
-@section("title")
-About me
+@section('title')
+    About me
 @endsection
-@section("description")
-The landing page or about-me page. It tells you more about who Basile Leroy is as a person and developer.
+@section('description')
+    The landing page or about-me page. It tells you more about who Basile Leroy is as a person and developer.
 @endsection
 
 <x-guest-layout>
@@ -57,9 +57,9 @@ The landing page or about-me page. It tells you more about who Basile Leroy is a
             <button class="accordion">Basile Leroy from Belgium</button>
             <div class="panel">
                 <p>Born and raised in <span class="focus-normal">Ghent</span>. I was brought up in both <span
-                    class="focus-normal">Dutch</span> and <span class="focus-normal">French</span> and
-                I became fluent in <span class="focus-normal">English</span> by
-                interacting with people all over the world.</p>
+                        class="focus-normal">Dutch</span> and <span class="focus-normal">French</span> and
+                    I became fluent in <span class="focus-normal">English</span> by
+                    interacting with people all over the world.</p>
             </div>
 
             <button class="accordion">A PHP web developer</button>
@@ -79,6 +79,12 @@ The landing page or about-me page. It tells you more about who Basile Leroy is a
                     organization where I was trained. Since then, I have been training job seekers in Belgium to
                     find a job as a web developer.</p>
             </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="reviews-wrapper">
+
         </div>
     </section>
     {{-- <section class="feedbacks">

@@ -55,20 +55,3 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     if (localStorage.getItem('about.autoslider') === "false") localStorage.setItem('about.autoslider', true)
 })
-
-/**
- * Slider for review carousel in about me page
- */
-
-
-
-/**
- * Toggle view mode on reviews in about me page
- */
-
-const   field = document.querySelector('section.feedbacks fieldset'),
-        toggleButton = document.querySelector('#toggle_checkbox')
-
-toggleButton.addEventListener('change', () => {
-    field.classList.toggle('grid')
-})
