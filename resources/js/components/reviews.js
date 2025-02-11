@@ -22,7 +22,7 @@ const allReviews = [
     },
     {
         id: 4,
-        keyword: "inspiring",
+        keyword: "Inspiring",
         role: "Former student",
         score: 5,
         message: "During the time I got to be a student in Basile's class, he kept the perfect balance of being a great teacher and a helpful friend who you could always count on. He was very punctual, motivating, passionate and knowledgeable."
