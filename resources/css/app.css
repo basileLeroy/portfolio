@@ -430,6 +430,11 @@ a:hover {
     -webkit-text-fill-color: transparent;
     margin-left: 3rem;
   }
+  main .hero h1 #subtext {
+    margin-top: 8px;
+    font-family: sans-serif;
+    font-size: 12px;
+  }
   main .hero .my-picture {
     max-width: 40%;
     flex-shrink: 0;
@@ -913,6 +918,10 @@ a:hover {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 4rem;
+  }
+  main .hero h1 #subtext {
+    font-family: sans-serif;
+    font-size: 30px;
   }
   main .hero .my-picture {
     margin-left: 100px;

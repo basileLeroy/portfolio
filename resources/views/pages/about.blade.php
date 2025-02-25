@@ -10,7 +10,8 @@
 <x-guest-layout>
     <section class="hero">
         <h1 class="hero">
-            <span id="first-name">BASILE</span><span id="last-name">LEROY</span>
+            <span id="first-name">BASILE</span> <span id="last-name">LEROY</span> 
+            <span id="subtext">Full Stack Web Developer</span>
         </h1>
         <div class="my-picture">
             <img src="{{ asset('storage/profile.png') }}" title="Photo of Basile Leroy"

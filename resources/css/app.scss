@@ -238,6 +238,12 @@ a {
                     -webkit-text-fill-color: transparent;
                     margin-left: 3rem;
                 }
+
+                #subtext {
+                    margin-top: 8px;
+                    font-family: $family;
+                    font-size: 12px;
+                }
             }
 
             .my-picture {
@@ -818,6 +824,11 @@ a {
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
                     margin-left: 4rem;
+                }
+
+                #subtext {
+                    font-family: $family;
+                    font-size: 30px;
                 }
             }
 
