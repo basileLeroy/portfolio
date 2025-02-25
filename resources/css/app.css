@@ -1278,6 +1278,9 @@ a:hover {
   main .projects .project .gallery .visuals img {
     width: 100%;
     height: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
   main .projects .project .gallery .visuals img:hover {
     border: 3px solid #2899E5;

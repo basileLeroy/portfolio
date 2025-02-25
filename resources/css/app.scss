@@ -1247,7 +1247,10 @@ a {
                         img {
                             width: 100%;
                             height: auto;
-    
+                            box-sizing: border-box;
+                            -moz-box-sizing: border-box;
+                            -webkit-box-sizing: border-box;
+                            
                             &:hover {
                                 border: 3px solid $primary;
                             }
