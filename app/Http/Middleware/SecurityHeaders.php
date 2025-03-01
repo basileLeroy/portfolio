@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Spatie\Csp\AddCspHeaders;
+use Spatie\Csp\Csp;
 
 
 class SecurityHeaders
