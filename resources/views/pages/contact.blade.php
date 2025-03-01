@@ -1,5 +1,5 @@
 @section('title')
-Contact me
+Contact me page
 @endsection
 @section("description")
 Contact Basile Leroy on this page.

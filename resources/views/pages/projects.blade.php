@@ -1,7 +1,7 @@
 @vite(['resources/js/lightbox/init.js'])
 
 @section('title')
-Projects
+My projects page
 @endsection
 @section("description")
 Look at some of the projects Basile Leroy has worked on.

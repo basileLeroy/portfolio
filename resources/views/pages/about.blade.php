@@ -1,7 +1,7 @@
 @vite(['resources/js/animations/text-animations.js', 'resources/js/animations/transitions.js', 'resources/js/components/reviews.js'])
 
 @section('title')
-    About me
+    About me page
 @endsection
 @section('description')
     The landing page or about-me page. It tells you more about who Basile Leroy is as a person and developer.
