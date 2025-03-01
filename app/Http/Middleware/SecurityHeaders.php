@@ -27,7 +27,7 @@ class SecurityHeaders
         if (app()->environment('production')) {
             $csp = "default-src 'self'; " .
                 "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.bunny.net; " .
-                "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com/recaptcha/ https://cloud.umami.is; " .
+                "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/;" .
                 "font-src 'self' https://fonts.bunny.net https://cdnjs.cloudflare.com; " .
                 "img-src 'self' data:; " .
                 "frame-src 'self' https://www.google.com/";
