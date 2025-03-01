@@ -23,8 +23,9 @@
         <meta name="twitter:description" content="@yield('description')">
         <meta name="twitter:image" content={{ asset("storage/meta-twitter.jpg") }}>
 
-        {{-- Favicon & Page Title --}}
+        {{-- Favicon, Canonical link & Page Title --}}
         <link rel="icon" href={{ asset("storage/logo.ico") }} type="image/x-icon">
+        <link rel="canonical" href="{{ url()->current() }}" />
         <title>{{ config('app.name', 'Basile Leroy') }} - @yield("title", '')</title>
 
         {{-- Icons --}}
