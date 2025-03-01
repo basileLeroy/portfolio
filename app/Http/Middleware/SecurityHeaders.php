@@ -19,12 +19,13 @@ class SecurityHeaders
     {
         $response = $next($request);
 
+        // General Security Headers
         $response->headers->set('X-Content-Type-Options', 'nosniff');
         $response->headers->set('X-Frame-Options', 'DENY');
         $response->headers->set('X-XSS-Protection', '1; mode=block');
         $response->headers->set('Referrer-Policy', 'no-referrer-when-downgrade');
 
-        // Add more headers as needed
+        // Apply CSP only in production
         if (app()->environment('production')) {
             $csp = new Csp();
             $csp->addDirective('default-src', "'self'")
@@ -34,9 +35,7 @@ class SecurityHeaders
                 ->addDirective('img-src', "'self' data:")
                 ->addDirective('frame-src', "'self' https://www.google.com/");
 
-            foreach ($csp->toArray() as $key => $value) {
-                $response->headers->set("Content-Security-Policy", "$key $value;");
-            }
+            $response->headers->set("Content-Security-Policy", $csp->renderHeader());
         }
 
         return $response;
