@@ -26,9 +26,17 @@ class SecurityHeaders
 
         // Add more headers as needed
         if (app()->environment('production')) {
-            app(AddCspHeaders::class)->handle($request, function () use ($response) {
-                return $response;
-            });
+            $csp = new Csp();
+            $csp->addDirective('default-src', "'self'")
+                ->addDirective('style-src', "'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.bunny.net")
+                ->addDirective('script-src', "'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com/recaptcha/ https://cloud.umami.is")
+                ->addDirective('font-src', "'self' https://fonts.bunny.net https://cdnjs.cloudflare.com")
+                ->addDirective('img-src', "'self' data:")
+                ->addDirective('frame-src', "'self' https://www.google.com/");
+
+            foreach ($csp->toArray() as $key => $value) {
+                $response->headers->set("Content-Security-Policy", "$key $value;");
+            }
         }
 
         return $response;
