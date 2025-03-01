@@ -39,7 +39,6 @@
         <script src="https://www.google.com/recaptcha/api.js"></script>
         
         <!-- Scripts -->
-        <script defer src="https://cloud.umami.is/script.js" data-website-id="660e2307-f8eb-4bd8-b81d-5fc59f41419d"></script>
         @vite(['resources/js/app.js'])
         
     </head>
