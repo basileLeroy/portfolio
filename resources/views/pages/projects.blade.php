@@ -38,19 +38,28 @@ Look at some of the projects Basile Leroy has worked on.
                         data-pswp-width="994" 
                         data-pswp-height="585" 
                         target="_blank">
-                        <img src={{ asset('storage/projects/custom-cms/drag-and-drop.jpg') }} alt="Thumbnail 1">
+                        <img 
+                            loading="lazy"
+                            decoding="async"
+                            src={{ asset('storage/projects/custom-cms/drag-and-drop.jpg') }} alt="Thumbnail 1">
                     </a>
                     <a href={{ asset('storage/projects/custom-cms/admin-view.jpg') }} 
                         data-pswp-width="1000" 
                         data-pswp-height="500" 
                         target="_blank">
-                        <img src={{ asset('storage/projects/custom-cms/admin-view.jpg') }} alt="Thumbnail 2">
+                        <img 
+                            loading="lazy"
+                            decoding="async"
+                            src={{ asset('storage/projects/custom-cms/admin-view.jpg') }} alt="Thumbnail 2">
                     </a>
                     <a href={{ asset('storage/projects/custom-cms/language-specific-text-editors.gif') }}
                         data-pswp-width="994" 
                         data-pswp-height="585"
                         target="_blank">
-                        <img src={{ asset('storage/projects/custom-cms/language-specific-text-editors.jpg') }}
+                        <img 
+                            loading="lazy"
+                            decoding="async"
+                            src={{ asset('storage/projects/custom-cms/language-specific-text-editors.jpg') }}
                             alt="Thumbnail 3">
                     </a>
                     </a>
@@ -58,7 +67,10 @@ Look at some of the projects Basile Leroy has worked on.
                         data-pswp-width="994" 
                         data-pswp-height="585"
                         target="_blank">
-                        <img src={{ asset('storage/projects/custom-cms/remove-and-update-galleries.jpg') }}
+                        <img 
+                            loading="lazy"
+                            decoding="async"
+                            src={{ asset('storage/projects/custom-cms/remove-and-update-galleries.jpg') }}
                             alt="Thumbnail 3">
                     </a>
                 </div>
@@ -87,19 +99,28 @@ Look at some of the projects Basile Leroy has worked on.
                         data-pswp-width="994" 
                         data-pswp-height="585" 
                         target="_blank">
-                        <img src={{ asset('storage/projects/hustle-prime/arena-demo.jpg') }} alt="Thumbnail 1">
+                        <img 
+                            loading="lazy"
+                            decoding="async"
+                            src={{ asset('storage/projects/hustle-prime/arena-demo.jpg') }} alt="Thumbnail 1">
                     </a>
                     <a href={{ asset('storage/projects/hustle-prime/banner-example.jpg') }} 
                         data-pswp-width="1000" 
                         data-pswp-height="500" 
                         target="_blank">
-                        <img src={{ asset('storage/projects/hustle-prime/banner-example.jpg') }} alt="Thumbnail 2">
+                        <img 
+                            loading="lazy"
+                            decoding="async"
+                            src={{ asset('storage/projects/hustle-prime/banner-example.jpg') }} alt="Thumbnail 2">
                     </a>
                     <a href={{ asset('storage/projects/hustle-prime/dynamic-components.gif') }}
                         data-pswp-width="994" 
                         data-pswp-height="585"
                         target="_blank">
-                        <img src={{ asset('storage/projects/hustle-prime/dynamic-components.jpg') }}
+                        <img 
+                            loading="lazy"
+                            decoding="async"
+                            src={{ asset('storage/projects/hustle-prime/dynamic-components.jpg') }}
                             alt="Thumbnail 3">
                     </a>
                     </a>
@@ -107,7 +128,10 @@ Look at some of the projects Basile Leroy has worked on.
                         data-pswp-width="994" 
                         data-pswp-height="585"
                         target="_blank">
-                        <img src={{ asset('storage/projects/hustle-prime/gembay-demo.jpg') }}
+                        <img 
+                            loading="lazy"
+                            decoding="async"
+                            src={{ asset('storage/projects/hustle-prime/gembay-demo.jpg') }}
                             alt="Thumbnail 3">
                     </a>
                 </div>
