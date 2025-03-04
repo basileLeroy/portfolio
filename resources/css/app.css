@@ -311,7 +311,7 @@ a:hover {
     padding: 0;
     width: 100%;
     height: 4px;
-    background-color: #1D71B8;
+    background-color: #2899E5;
     transition: opacity 1.5s ease, transform 1s ease;
   }
   header .menu #mobile .menu-button .menu-burger .line:nth-child(even) {
@@ -320,7 +320,7 @@ a:hover {
   header .menu #mobile .menu-button .menu-text {
     margin: 8px 0 0;
     font-size: 14px;
-    color: #1D71B8;
+    color: #2899E5;
   }
   header .menu #mobile .menu-button.is-open .menu-burger .line:first-child {
     transform: translateY(8px) rotate(45deg);
