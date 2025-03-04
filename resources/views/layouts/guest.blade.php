@@ -28,10 +28,12 @@
         <link rel="canonical" href="{{ url()->current() }}" />
         <title>{{ config('app.name', 'Basile Leroy') }} - @yield("title", '')</title>
 
+        {{-- Preloaded Images --}}
+        <link rel="preload" href="{{ asset("storage/background-waves.webp")}}" as="image">
+
         {{-- Icons --}}
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
-        
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"></noscript>
 
