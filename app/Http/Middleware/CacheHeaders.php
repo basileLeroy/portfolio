@@ -25,7 +25,7 @@ class CacheHeaders
         return $next($request);
     }
 
-        /**
+    /**
      * Check if the request is for a static asset (CSS, JS, images).
      */
     private function isStaticAsset(Request $request): bool
