@@ -38,7 +38,7 @@
         <link rel="stylesheet" href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap">
 
         {{-- API's --}}
-        <script src="https://www.google.com/recaptcha/api.js"></script>
+        @stack('api')
         
         <!-- Scripts -->
         @vite(['resources/js/app.js'])

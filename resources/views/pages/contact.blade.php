@@ -5,6 +5,10 @@ Contact me page
 Contact Basile Leroy on this page.
 @endsection
 
+@push('api')
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+@endpush
+
 <x-guest-layout>
     <section class="show contact">
         <form action={{ route('sendMessage') }} method="POST" id="contact-form">
