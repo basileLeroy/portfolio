@@ -36,10 +36,10 @@
             <td style="text-align: center; padding: 20px;">
                 <div style="margin-bottom: 15px;">
                     <a href="https://www.linkedin.com/in/basile-leroy/" style="text-decoration: none;">
-                        <img src={{ asset('storage/LinkedIn.png') }} style="height: 40px; width:auto " alt="LinkedIn">
+                        <img src={{ asset('storage/LinkedIn.jpg') }} style="height: 40px; width:auto " alt="LinkedIn">
                     </a>
                     <a href="https://github.com/basileLeroy" style="text-decoration: none;">
-                        <img src={{ asset('storage/GitHub.png') }} style="height: 40px; width:auto " alt="GitHub">
+                        <img src={{ asset('storage/GitHub.jpg') }} style="height: 40px; width:auto " alt="GitHub">
                     </a>
                 </div>
                 <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">

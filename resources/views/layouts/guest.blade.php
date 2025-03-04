@@ -13,7 +13,7 @@
         {{-- Meta Cards - OpenGraph --}}
         <meta property="og:title" content="{{ config('app.name', 'Basile Leroy') }} - @yield('title', '')">
         <meta property="og:description" content="@yield('description')">
-        <meta property="og:image" content={{ asset("storage/meta-og.jpg") }}>
+        <meta property="og:image" content={{ asset("storage/meta-og.webp") }}>
         <meta property="og:url" content="https://basileleroy.com">
         <meta property="og:type" content="website">
 
@@ -21,7 +21,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="{{ config('app.name', 'Basile Leroy') }} - @yield('title', '')">
         <meta name="twitter:description" content="@yield('description')">
-        <meta name="twitter:image" content={{ asset("storage/meta-twitter.jpg") }}>
+        <meta name="twitter:image" content={{ asset("storage/meta-twitter.webp") }}>
 
         {{-- Favicon, Canonical link & Page Title --}}
         <link rel="icon" href={{ asset("storage/logo.ico") }} type="image/x-icon">

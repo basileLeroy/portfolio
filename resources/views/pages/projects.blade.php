@@ -41,16 +41,16 @@ Look at some of the projects Basile Leroy has worked on.
                         <img 
                             loading="lazy"
                             decoding="async"
-                            src={{ asset('storage/projects/custom-cms/drag-and-drop.jpg') }} alt="Thumbnail 1">
+                            src={{ asset('storage/projects/custom-cms/drag-and-drop.webp') }} alt="Thumbnail 1">
                     </a>
-                    <a href={{ asset('storage/projects/custom-cms/admin-view.jpg') }} 
+                    <a href={{ asset('storage/projects/custom-cms/admin-view.webp') }} 
                         data-pswp-width="1000" 
                         data-pswp-height="500" 
                         target="_blank">
                         <img 
                             loading="lazy"
                             decoding="async"
-                            src={{ asset('storage/projects/custom-cms/admin-view.jpg') }} alt="Thumbnail 2">
+                            src={{ asset('storage/projects/custom-cms/admin-view.webp') }} alt="Thumbnail 2">
                     </a>
                     <a href={{ asset('storage/projects/custom-cms/language-specific-text-editors.gif') }}
                         data-pswp-width="994" 
@@ -59,7 +59,7 @@ Look at some of the projects Basile Leroy has worked on.
                         <img 
                             loading="lazy"
                             decoding="async"
-                            src={{ asset('storage/projects/custom-cms/language-specific-text-editors.jpg') }}
+                            src={{ asset('storage/projects/custom-cms/language-specific-text-editors.webp') }}
                             alt="Thumbnail 3">
                     </a>
                     </a>
@@ -70,7 +70,7 @@ Look at some of the projects Basile Leroy has worked on.
                         <img 
                             loading="lazy"
                             decoding="async"
-                            src={{ asset('storage/projects/custom-cms/remove-and-update-galleries.jpg') }}
+                            src={{ asset('storage/projects/custom-cms/remove-and-update-galleries.webp') }}
                             alt="Thumbnail 3">
                     </a>
                 </div>
@@ -102,16 +102,16 @@ Look at some of the projects Basile Leroy has worked on.
                         <img 
                             loading="lazy"
                             decoding="async"
-                            src={{ asset('storage/projects/hustle-prime/arena-demo.jpg') }} alt="Thumbnail 1">
+                            src={{ asset('storage/projects/hustle-prime/arena-demo.webp') }} alt="Thumbnail 1">
                     </a>
-                    <a href={{ asset('storage/projects/hustle-prime/banner-example.jpg') }} 
+                    <a href={{ asset('storage/projects/hustle-prime/banner-example.webp') }} 
                         data-pswp-width="1000" 
                         data-pswp-height="500" 
                         target="_blank">
                         <img 
                             loading="lazy"
                             decoding="async"
-                            src={{ asset('storage/projects/hustle-prime/banner-example.jpg') }} alt="Thumbnail 2">
+                            src={{ asset('storage/projects/hustle-prime/banner-example.webp') }} alt="Thumbnail 2">
                     </a>
                     <a href={{ asset('storage/projects/hustle-prime/dynamic-components.gif') }}
                         data-pswp-width="994" 
@@ -120,7 +120,7 @@ Look at some of the projects Basile Leroy has worked on.
                         <img 
                             loading="lazy"
                             decoding="async"
-                            src={{ asset('storage/projects/hustle-prime/dynamic-components.jpg') }}
+                            src={{ asset('storage/projects/hustle-prime/dynamic-components.webp') }}
                             alt="Thumbnail 3">
                     </a>
                     </a>
@@ -131,7 +131,7 @@ Look at some of the projects Basile Leroy has worked on.
                         <img 
                             loading="lazy"
                             decoding="async"
-                            src={{ asset('storage/projects/hustle-prime/gembay-demo.jpg') }}
+                            src={{ asset('storage/projects/hustle-prime/gembay-demo.webp') }}
                             alt="Thumbnail 3">
                     </a>
                 </div>

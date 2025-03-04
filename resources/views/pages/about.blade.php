@@ -14,7 +14,7 @@
             <span id="subtext">Full Stack Web Developer</span>
         </h1>
         <div class="my-picture">
-            <img src="{{ asset('storage/profile.png') }}" loading="lazy" title="Photo of Basile Leroy"
+            <img src="{{ asset('storage/profile.webp') }}" loading="lazy" title="Photo of Basile Leroy"
                 alt="A picture of Basile Leroy sitting down with a colorful background">
         </div>
     </section>

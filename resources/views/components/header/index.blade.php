@@ -10,7 +10,7 @@
         <img 
             loading="lazy"
             decoding="async"
-            src="{{ asset('storage/logo.png') }}" alt="Logo of basileleroy.com">
+            src="{{ asset('storage/logo.webp') }}" alt="Logo of basileleroy.com">
     </a>
     
     <x-nav />
