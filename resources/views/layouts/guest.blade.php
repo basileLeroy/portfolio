@@ -31,6 +31,9 @@
         {{-- Preloaded Images --}}
         <link rel="preload" href="{{ asset("storage/background-waves.webp")}}" as="image">
 
+        <!-- Scripts -->
+        @vite(['resources/js/app.js'])
+
         {{-- Icons --}}
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
@@ -45,8 +48,7 @@
         {{-- API's --}}
         @stack('api')
         
-        <!-- Scripts -->
-        @vite(['resources/js/app.js'])
+
         
     </head>
     <body>
