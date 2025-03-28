@@ -1,7 +1,7 @@
 <header>
     <a href="/" id="logo" class="desktop" aria-label="Go to Home - Basile Leroy">
         <video autoplay muted playsinline width="175" height="auto" preload="auto">
-            <source src="{{ asset('storage/logo-animation.webm') }}" type="video/webm">
+            <source src="{{ asset('storage/animated_logo.webm') }}" type="video/webm">
             Your browser does not support the video tag.
         </video>
     </a>
